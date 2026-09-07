@@ -1,0 +1,2990 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 000000DF 86FF:BEA8
+D:.
+¦   .env.example
+¦   .gitignore
+¦   docker-compose.yml
+¦   folder_structure.txt
+¦   LICENSE
+¦   Makefile
+¦   pyproject.toml
+¦   README.md
+¦   requirements.txt
+¦   setup.py
+¦   
++---docs
+¦   +---api
+¦   ¦       protocol-spec.md
+¦   ¦       rest-api.md
+¦   ¦       websocket-api.md
+¦   ¦       
+¦   +---architecture
+¦   ¦   ¦   agent_orchestration.md
+¦   ¦   ¦   memory_system.md
+¦   ¦   ¦   security.md
+¦   ¦   ¦   system_architecture.md
+¦   ¦   ¦   
+¦   ¦   +---adr
+¦   ¦           001-use-qwen-llm.md
+¦   ¦           002-langgraph-orchestration.md
+¦   ¦           003-crewai-agents.md
+¦   ¦           004-memory-architecture.md
+¦   ¦           
+¦   +---development
+¦   ¦       contributing.md
+¦   ¦       evaluation.md
+¦   ¦       release-process.md
+¦   ¦       testing.md
+¦   ¦       
+¦   +---getting-started
+¦   ¦       configuration.md
+¦   ¦       installation.md
+¦   ¦       quickstart.md
+¦   ¦       README.md
+¦   ¦       
+¦   +---user-guide
+¦           chat-interface.md
+¦           completion-features.md
+¦           intellij-plugin.md
+¦           vscode-extension.md
+¦           
++---editor-clients
+¦   +---intellij-plugin
+¦   ¦   ¦   build.gradle.kts
+¦   ¦   ¦   settings.gradle.kts
+¦   ¦   ¦   
+¦   ¦   +---src
+¦   ¦   ¦   +---main
+¦   ¦   ¦       +---kotlin
+¦   ¦   ¦       ¦   +---com
+¦   ¦   ¦       ¦       +---aicowork
+¦   ¦   ¦       ¦           +---intellij
+¦   ¦   ¦       ¦               ¦   AICoworkPlugin.kt
+¦   ¦   ¦       ¦               ¦   
+¦   ¦   ¦       ¦               +---actions
+¦   ¦   ¦       ¦               ¦       ActionHandlers.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---chat
+¦   ¦   ¦       ¦               ¦       ChatPanel.kt
+¦   ¦   ¦       ¦               ¦       ChatToolWindow.kt
+¦   ¦   ¦       ¦               ¦       MessageHandler.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---client
+¦   ¦   ¦       ¦               ¦       AICoworkClient.kt
+¦   ¦   ¦       ¦               ¦       ConnectionManager.kt
+¦   ¦   ¦       ¦               ¦       Protocol.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---completion
+¦   ¦   ¦       ¦               ¦       CompletionProvider.kt
+¦   ¦   ¦       ¦               ¦       ContextCollector.kt
+¦   ¦   ¦       ¦               ¦       GhostTextRenderer.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---config
+¦   ¦   ¦       ¦                       PluginSettings.kt
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       +---resources
+¦   ¦   ¦           +---icons
+¦   ¦   ¦           +---META-INF
+¦   ¦   ¦                   plugin.xml
+¦   ¦   ¦                   
+¦   ¦   +---test
+¦   ¦       +---kotlin
+¦   +---shared-protocol
+¦   ¦       messages.py
+¦   ¦       protocol.schema.json
+¦   ¦       utils.py
+¦   ¦       
+¦   +---vscode-extension
+¦       ¦   .vscodeignore
+¦       ¦   package.json
+¦       ¦   tsconfig.json
+¦       ¦   
+¦       +---resources
+¦       ¦   +---icons
+¦       ¦   +---media
+¦       +---src
+¦       ¦   ¦   extension.ts
+¦       ¦   ¦   
+¦       ¦   +---chat
+¦       ¦   ¦       chatViewProvider.ts
+¦       ¦   ¦       panel.css
+¦       ¦   ¦       panel.html
+¦       ¦   ¦       panel.js
+¦       ¦   ¦       
+¦       ¦   +---client
+¦       ¦   ¦       aiCoworkClient.ts
+¦       ¦   ¦       connection.ts
+¦       ¦   ¦       protocol.ts
+¦       ¦   ¦       
+¦       ¦   +---commands
+¦       ¦   ¦       handlers.ts
+¦       ¦   ¦       registerCommands.ts
+¦       ¦   ¦       
+¦       ¦   +---completion
+¦       ¦   ¦       completionProvider.ts
+¦       ¦   ¦       context_provider.ts
+¦       ¦   ¦       ghost_text.ts
+¦       ¦   ¦       
+¦       ¦   +---config
+¦       ¦   ¦       settings.ts
+¦       ¦   ¦       
+¦       ¦   +---utils
+¦       ¦           file_utils.ts
+¦       ¦           logger.ts
+¦       ¦           
+¦       +---test
+¦               completion.test.ts
+¦               extension.test.ts
+¦               
++---evaluation
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---benchmarks
+¦   ¦       aicowork_benchmark.py
+¦   ¦       comparison.py
+¦   ¦       copilot_benchmark.py
+¦   ¦       __init__.py
+¦   ¦       
+¦   +---ragas
+¦   ¦   ¦   dataset.py
+¦   ¦   ¦   evaluator.py
+¦   ¦   ¦   metrics.py
+¦   ¦   ¦   scorecard.py
+¦   ¦   ¦   __init__.py
+¦   ¦   ¦   
+¦   ¦   +---reporters
+¦   ¦           html_reporter.py
+¦   ¦           json_reporter.py
+¦   ¦           
+¦   +---test_cases
+¦       +---deployment
+¦       +---design
+¦       +---documentation
+¦       +---implementation
+¦       +---requirements
+¦       +---testing
++---infrastructure
+¦   +---docker
+¦   ¦       .env
+¦   ¦       docker-compose.yml
+¦   ¦       Dockerfile.nginx
+¦   ¦       Dockerfile.qdrant
+¦   ¦       Dockerfile.server
+¦   ¦       
+¦   +---kubernetes
+¦   ¦       configmap.yaml
+¦   ¦       deployment.yaml
+¦   ¦       ingress.yaml
+¦   ¦       service.yaml
+¦   ¦       
+¦   +---monitoring
+¦   ¦   +---grafana
+¦   ¦   ¦   +---dashboards
+¦   ¦   +---prometheus
+¦   ¦           prometheus.yml
+¦   ¦           
+¦   +---qdrant
+¦       +---config
+¦       ¦       qdrant_config.yaml
+¦       ¦       
+¦       +---init
+¦               setup.sh
+¦               
++---scripts
+¦   ¦   build_extensions.sh
+¦   ¦   download_models.py
+¦   ¦   package_extension.sh
+¦   ¦   run_tests.sh
+¦   ¦   seed_memory.py
+¦   ¦   setup.sh
+¦   ¦   
+¦   +---dev
+¦           start_server.sh
+¦           watch_intellij.sh
+¦           watch_vscode.sh
+¦           
++---server
+    ¦   main.py
+    ¦   __init__.py
+    ¦   
+    +---api
+    ¦   ¦   __init__.py
+    ¦   ¦   
+    ¦   +---middleware
+    ¦   ¦       auth.py
+    ¦   ¦       cors.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---routes
+    ¦   ¦       approval.py
+    ¦   ¦       chat.py
+    ¦   ¦       completion.py
+    ¦   ¦       evaluation.py
+    ¦   ¦       health.py
+    ¦   ¦       memory.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---websocket
+    ¦           handlers.py
+    ¦           manager.py
+    ¦           __init__.py
+    ¦           
+    +---core
+    ¦       config.py
+    ¦       container.py
+    ¦       exceptions.py
+    ¦       logging.py
+    ¦       __init__.py
+    ¦       
+    +---crews
+    ¦   ¦   base_crew.py
+    ¦   ¦   __init__.py
+    ¦   ¦   
+    ¦   +---deployment_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---design_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---documentation_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---implementation_crew
+    ¦   ¦       agents.py
+    ¦   ¦       completion.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---requirement_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---testing_crew
+    ¦           agents.py
+    ¦           crew.py
+    ¦           tasks.py
+    ¦           __init__.py
+    ¦           
+    +---foundation
+    ¦   ¦   __init__.py
+    ¦   ¦   
+    ¦   +---evaluation
+    ¦   ¦       metrics.py
+    ¦   ¦       scorecard.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---llm
+    ¦   ¦       model_manager.py
+    ¦   ¦       qwen_client.py
+    ¦   ¦       tokenizer.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---memory
+    ¦   ¦       decision_memory.py
+    ¦   ¦       embeddings.py
+    ¦   ¦       ingest.py
+    ¦   ¦       retriever.py
+    ¦   ¦       schemas.py
+    ¦   ¦       vector_store.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---tools
+    ¦           file_watcher.py
+    ¦           git_ops.py
+    ¦           linter.py
+    ¦           memory_search.py
+    ¦           repo_reader.py
+    ¦           repo_writer.py
+    ¦           symbol_search.py
+    ¦           test_runner.py
+    ¦           __init__.py
+    ¦           
+    +---orchestrator
+    ¦       approval.py
+    ¦       graph.py
+    ¦       phase_registry.py
+    ¦       router.py
+    ¦       state.py
+    ¦       supervisor.py
+    ¦       __init__.py
+    ¦       
+    +---tests
+        ¦   __init__.py
+        ¦   
+        +---fixtures
+        ¦   +---sample_code
+        ¦   +---sample_requirements
+        +---integration
+        ¦       test_api.py
+        ¦       test_evaluation.py
+        ¦       test_memory.py
+        ¦       
+        +---unit
+                test_crews.py
+                test_foundation.py
+                test_orchestrator.py
+                
+=== D:\Ramit\mislencious\projects\ai-cowork\.env.example === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\.gitignore === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\docker-compose.yml === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\folder_structure.txt === 
+Folder PATH listing for volume New Volume
+Volume serial number is 000000DF 86FF:BEA8
+D:.
+¦   .env.example
+¦   .gitignore
+¦   docker-compose.yml
+¦   folder_structure.txt
+¦   LICENSE
+¦   Makefile
+¦   pyproject.toml
+¦   README.md
+¦   requirements.txt
+¦   setup.py
+¦   
++---docs
+¦   +---api
+¦   ¦       protocol-spec.md
+¦   ¦       rest-api.md
+¦   ¦       websocket-api.md
+¦   ¦       
+¦   +---architecture
+¦   ¦   ¦   agent_orchestration.md
+¦   ¦   ¦   memory_system.md
+¦   ¦   ¦   security.md
+¦   ¦   ¦   system_architecture.md
+¦   ¦   ¦   
+¦   ¦   +---adr
+¦   ¦           001-use-qwen-llm.md
+¦   ¦           002-langgraph-orchestration.md
+¦   ¦           003-crewai-agents.md
+¦   ¦           004-memory-architecture.md
+¦   ¦           
+¦   +---development
+¦   ¦       contributing.md
+¦   ¦       evaluation.md
+¦   ¦       release-process.md
+¦   ¦       testing.md
+¦   ¦       
+¦   +---getting-started
+¦   ¦       configuration.md
+¦   ¦       installation.md
+¦   ¦       quickstart.md
+¦   ¦       README.md
+¦   ¦       
+¦   +---user-guide
+¦           chat-interface.md
+¦           completion-features.md
+¦           intellij-plugin.md
+¦           vscode-extension.md
+¦           
++---editor-clients
+¦   +---intellij-plugin
+¦   ¦   ¦   build.gradle.kts
+¦   ¦   ¦   settings.gradle.kts
+¦   ¦   ¦   
+¦   ¦   +---src
+¦   ¦   ¦   +---main
+¦   ¦   ¦       +---kotlin
+¦   ¦   ¦       ¦   +---com
+¦   ¦   ¦       ¦       +---aicowork
+¦   ¦   ¦       ¦           +---intellij
+¦   ¦   ¦       ¦               ¦   AICoworkPlugin.kt
+¦   ¦   ¦       ¦               ¦   
+¦   ¦   ¦       ¦               +---actions
+¦   ¦   ¦       ¦               ¦       ActionHandlers.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---chat
+¦   ¦   ¦       ¦               ¦       ChatPanel.kt
+¦   ¦   ¦       ¦               ¦       ChatToolWindow.kt
+¦   ¦   ¦       ¦               ¦       MessageHandler.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---client
+¦   ¦   ¦       ¦               ¦       AICoworkClient.kt
+¦   ¦   ¦       ¦               ¦       ConnectionManager.kt
+¦   ¦   ¦       ¦               ¦       Protocol.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---completion
+¦   ¦   ¦       ¦               ¦       CompletionProvider.kt
+¦   ¦   ¦       ¦               ¦       ContextCollector.kt
+¦   ¦   ¦       ¦               ¦       GhostTextRenderer.kt
+¦   ¦   ¦       ¦               ¦       
+¦   ¦   ¦       ¦               +---config
+¦   ¦   ¦       ¦                       PluginSettings.kt
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       +---resources
+¦   ¦   ¦           +---icons
+¦   ¦   ¦           +---META-INF
+¦   ¦   ¦                   plugin.xml
+¦   ¦   ¦                   
+¦   ¦   +---test
+¦   ¦       +---kotlin
+¦   +---shared-protocol
+¦   ¦       messages.py
+¦   ¦       protocol.schema.json
+¦   ¦       utils.py
+¦   ¦       
+¦   +---vscode-extension
+¦       ¦   .vscodeignore
+¦       ¦   package.json
+¦       ¦   tsconfig.json
+¦       ¦   
+¦       +---resources
+¦       ¦   +---icons
+¦       ¦   +---media
+¦       +---src
+¦       ¦   ¦   extension.ts
+¦       ¦   ¦   
+¦       ¦   +---chat
+¦       ¦   ¦       chatViewProvider.ts
+¦       ¦   ¦       panel.css
+¦       ¦   ¦       panel.html
+¦       ¦   ¦       panel.js
+¦       ¦   ¦       
+¦       ¦   +---client
+¦       ¦   ¦       aiCoworkClient.ts
+¦       ¦   ¦       connection.ts
+¦       ¦   ¦       protocol.ts
+¦       ¦   ¦       
+¦       ¦   +---commands
+¦       ¦   ¦       handlers.ts
+¦       ¦   ¦       registerCommands.ts
+¦       ¦   ¦       
+¦       ¦   +---completion
+¦       ¦   ¦       completionProvider.ts
+¦       ¦   ¦       context_provider.ts
+¦       ¦   ¦       ghost_text.ts
+¦       ¦   ¦       
+¦       ¦   +---config
+¦       ¦   ¦       settings.ts
+¦       ¦   ¦       
+¦       ¦   +---utils
+¦       ¦           file_utils.ts
+¦       ¦           logger.ts
+¦       ¦           
+¦       +---test
+¦               completion.test.ts
+¦               extension.test.ts
+¦               
++---evaluation
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---benchmarks
+¦   ¦       aicowork_benchmark.py
+¦   ¦       comparison.py
+¦   ¦       copilot_benchmark.py
+¦   ¦       __init__.py
+¦   ¦       
+¦   +---ragas
+¦   ¦   ¦   dataset.py
+¦   ¦   ¦   evaluator.py
+¦   ¦   ¦   metrics.py
+¦   ¦   ¦   scorecard.py
+¦   ¦   ¦   __init__.py
+¦   ¦   ¦   
+¦   ¦   +---reporters
+¦   ¦           html_reporter.py
+¦   ¦           json_reporter.py
+¦   ¦           
+¦   +---test_cases
+¦       +---deployment
+¦       +---design
+¦       +---documentation
+¦       +---implementation
+¦       +---requirements
+¦       +---testing
++---infrastructure
+¦   +---docker
+¦   ¦       .env
+¦   ¦       docker-compose.yml
+¦   ¦       Dockerfile.nginx
+¦   ¦       Dockerfile.qdrant
+¦   ¦       Dockerfile.server
+¦   ¦       
+¦   +---kubernetes
+¦   ¦       configmap.yaml
+¦   ¦       deployment.yaml
+¦   ¦       ingress.yaml
+¦   ¦       service.yaml
+¦   ¦       
+¦   +---monitoring
+¦   ¦   +---grafana
+¦   ¦   ¦   +---dashboards
+¦   ¦   +---prometheus
+¦   ¦           prometheus.yml
+¦   ¦           
+¦   +---qdrant
+¦       +---config
+¦       ¦       qdrant_config.yaml
+¦       ¦       
+¦       +---init
+¦               setup.sh
+¦               
++---scripts
+¦   ¦   build_extensions.sh
+¦   ¦   download_models.py
+¦   ¦   package_extension.sh
+¦   ¦   run_tests.sh
+¦   ¦   seed_memory.py
+¦   ¦   setup.sh
+¦   ¦   
+¦   +---dev
+¦           start_server.sh
+¦           watch_intellij.sh
+¦           watch_vscode.sh
+¦           
++---server
+    ¦   main.py
+    ¦   __init__.py
+    ¦   
+    +---api
+    ¦   ¦   __init__.py
+    ¦   ¦   
+    ¦   +---middleware
+    ¦   ¦       auth.py
+    ¦   ¦       cors.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---routes
+    ¦   ¦       approval.py
+    ¦   ¦       chat.py
+    ¦   ¦       completion.py
+    ¦   ¦       evaluation.py
+    ¦   ¦       health.py
+    ¦   ¦       memory.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---websocket
+    ¦           handlers.py
+    ¦           manager.py
+    ¦           __init__.py
+    ¦           
+    +---core
+    ¦       config.py
+    ¦       container.py
+    ¦       exceptions.py
+    ¦       logging.py
+    ¦       __init__.py
+    ¦       
+    +---crews
+    ¦   ¦   base_crew.py
+    ¦   ¦   __init__.py
+    ¦   ¦   
+    ¦   +---deployment_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---design_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---documentation_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---implementation_crew
+    ¦   ¦       agents.py
+    ¦   ¦       completion.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---requirement_crew
+    ¦   ¦       agents.py
+    ¦   ¦       crew.py
+    ¦   ¦       tasks.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---testing_crew
+    ¦           agents.py
+    ¦           crew.py
+    ¦           tasks.py
+    ¦           __init__.py
+    ¦           
+    +---foundation
+    ¦   ¦   __init__.py
+    ¦   ¦   
+    ¦   +---evaluation
+    ¦   ¦       metrics.py
+    ¦   ¦       scorecard.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---llm
+    ¦   ¦       model_manager.py
+    ¦   ¦       qwen_client.py
+    ¦   ¦       tokenizer.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---memory
+    ¦   ¦       decision_memory.py
+    ¦   ¦       embeddings.py
+    ¦   ¦       ingest.py
+    ¦   ¦       retriever.py
+    ¦   ¦       schemas.py
+    ¦   ¦       vector_store.py
+    ¦   ¦       __init__.py
+    ¦   ¦       
+    ¦   +---tools
+    ¦           file_watcher.py
+    ¦           git_ops.py
+    ¦           linter.py
+    ¦           memory_search.py
+    ¦           repo_reader.py
+    ¦           repo_writer.py
+    ¦           symbol_search.py
+    ¦           test_runner.py
+    ¦           __init__.py
+    ¦           
+    +---orchestrator
+    ¦       approval.py
+    ¦       graph.py
+    ¦       phase_registry.py
+    ¦       router.py
+    ¦       state.py
+    ¦       supervisor.py
+    ¦       __init__.py
+    ¦       
+    +---tests
+        ¦   __init__.py
+        ¦   
+        +---fixtures
+        ¦   +---sample_code
+        ¦   +---sample_requirements
+        +---integration
+        ¦       test_api.py
+        ¦       test_evaluation.py
+        ¦       test_memory.py
+        ¦       
+        +---unit
+                test_crews.py
+                test_foundation.py
+                test_orchestrator.py
+                
+=== D:\Ramit\mislencious\projects\ai-cowork\.env.example === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\.gitignore === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\docker-compose.yml === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\folder_structure.txt === 
+Folder PATH listing for volume New Volume
+Volume serial number is 000000DF 86FF:BEA8
+D:.
+¦   .env.example
+¦   .gitignore
+¦   docker-compose.yml
+¦   folder_structure.txt
+¦   LICENSE
+¦   Makefile
+¦   pyproject.toml
+¦   README.md
+¦   requirements.txt
+¦   setup.py
+¦   
++---docs
+¦   +---api
+¦   ¦       protocol-spec.md
+¦   ¦       rest-api.md
+¦   ¦   
+=== D:\Ramit\mislencious\projects\ai-cowork\LICENSE === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\Makefile === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\pyproject.toml === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\README.md === 
+# AI-Cowork
+
+**Multi-Agentic AI Assistant for the Entire SDLC**  
+*Powered by Qwen open-source LLMs, LangGraph, and CrewAI*
+
+AI-Cowork is a **multi-agent system** designed to assist developers across all phases of the Software Development Life Cycle (SDLC). It provides a seamless, Copilot-like experience inside VS Code and IntelliJ, while leveraging a **single Qwen model** for all agent interactions. The system uses **agentic memory** (LlamaIndex + Qdrant) to retain context, and its orchestration is built with **LangGraph** to enforce a strict **one-agent-per-SDLC-phase** policy, ensuring focused and uncorrupted assistance.
+
+Built to **outperform GitHub Copilot** in every SDLC phase, AI-Cowork is evaluated using **RAGAS** metrics and comes with a full benchmarking suite to prove its superiority.
+
+---
+
+## Table of Contents
+
+- [Key Features](#key-features)
+- [Architecture Overview](#architecture-overview)
+- [SDLC Phase Mapping](#sdlc-phase-mapping)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Evaluation & Benchmarking](#evaluation--benchmarking)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Key Features
+
+- **Multi-Agent Orchestration** â€“ Six dedicated crews, each responsible for one SDLC phase, coordinated by LangGraph.
+- **Single LLM Backend** â€“ Uses only **Qwen** (open-source models from HuggingFace) for all tasks, ensuring consistency and cost control.
+- **Agentic Memory** â€“ Persistent, cross-session memory using LlamaIndex and Qdrant vector database, enabling context-aware suggestions.
+- **Copilotâ€‘Parity IDE Integration** â€“ Native extensions for **VS Code** and **IntelliJ** with:
+  - Inline ghost-text completions (same UX as GitHub Copilot)
+  - Chat interface for natural language interaction
+  - Full access to file system, symbols, and project context
+- **Humanâ€‘inâ€‘theâ€‘Loop** â€“ Approval interrupts for critical actions (e.g., code generation, deployment).
+- **RAGASâ€‘Based Evaluation** â€“ Builtâ€‘in benchmarking suite comparing AIâ€‘Cowork against GitHub Copilot across all SDLC phases.
+- **Fully Local & Confidential** â€“ All code, memory, and LLM inference stay on your machine (or your private cloud) â€“ no data leaves your control.
+
+---
+
+## Architecture Overview
+
+The system is composed of four main layers:
+
+1. **Orchestration Layer (LangGraph)**  
+   Manages global state, routes requests to the appropriate crew, enforces phaseâ€‘specific agent execution, and handles human approval interrupts.
+
+2. **Agent Layer (CrewAI)**  
+   Six crews, each containing specialized agents (e.g., Researcher/Writer for Requirements, Architect for Design, Developer for Implementation, etc.). Each crew has a defined set of tasks and collaboration logic.
+
+3. **Foundation Layer**  
+   - **LLM**: A single shared instance of Qwen (configurable model) for all crews.  
+   - **Memory**: LlamaIndex + Qdrant for longâ€‘term storage and retrieval of project context, decisions, and historical interactions.  
+   - **Tools**: File system read/write, symbol search, linter, test runner, Git operations, etc.
+
+4. **IDE Integration Layer**  
+   - **VS Code** & **IntelliJ** plugins communicate with the backend via a shared WebSocket/HTTP protocol.  
+   - Provides inline completions, chat, and command integration.
+
+The entire system is built as a FastAPI server with a pluggable architecture, enabling easy extension and customization.
+
+---
+
+## SDLC Phase Mapping
+
+AIâ€‘Cowork adheres to the exact phase breakdown from the evaluation spreadsheet, with **one crew per phase**:
+
+| Phase | Crew | Agents | Key Responsibilities |
+|-------|------|--------|-----------------------|
+| **Requirement** | `requirement_crew` | Researcher, Writer | Parse natural language requirements, produce structured specifications and documentation. |
+| **Design** | `design_crew` | Software Architects | Generate architecture blueprints, apply SOLID principles, create UML diagrams. |
+| **Implementation** | `implementation_crew` | Developers | Chatâ€‘based coding, autonomous refactoring, contextâ€‘aware generation, securityâ€‘aware coding, lowâ€‘latency completions. |
+| **Unit Testing** | `testing_crew` | Test Engineers | Generate JUnit/TestNG tests, smart test generation for Spring/Micronaut/Quarkus. |
+| **Documentation** | `documentation_crew` | Technical Writers | Produce API docs, wikis, user guides, architecture overviews. |
+| **Deployment** | `deployment_crew` | DevOps Engineers | Generate Dockerfiles, Kubernetes manifests, CI/CD pipelines, observability configs. |
+
+*Securityâ€‘Aware Coding is included inside the Implementation crew, as per the original specification.*
+
+---
+
+## Technology Stack
+
+| Component | Technology |
+|-----------|------------|
+| **LLM** | Qwen (openâ€‘source models from HuggingFace) |
+| **Orchestration** | LangGraph |
+| **Agents** | CrewAI |
+| **Memory** | LlamaIndex + Qdrant (vector DB) |
+| **Backend API** | FastAPI (Python) |
+| **IDE Extensions** | VS Code (TypeScript), IntelliJ (Kotlin) |
+| **Protocol** | WebSocket + HTTP, shared JSON schema |
+| **Evaluation** | RAGAS + custom metrics |
+| **Infrastructure** | Docker, Kubernetes (optional), Prometheus/Grafana |
+=== D:\Ramit\mislencious\projects\ai-cowork\requirements.txt === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\setup.py === 
+
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\COMMIT_EDITMSG === 
+Added extensions main code
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\config === 
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = Ramit Singh
+	email = ramitdel@gmail.com
+[remote "origin"]
+	url = https://github.com/Ramit1306/AI-Co-work.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\description === 
+Unnamed repository; edit this file 'description' to name the repository.
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\HEAD === 
+ref: refs/heads/main
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\index === 
+DIRC      ¾j‰¿1¬0j‰¿1¬0          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ .env.example      j‰¿1¬0j‰¿1¬0          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 
+.gitignore        j‰¿1j‰¿1          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ LICENSE   j‰¿1ÉÒxj‰¿1ÉÒx          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ Makefile  j‰¿1j‹'¤hh$          ¤          ÚëIjÉé¾¦+Xç&GQj.	r… 	README.md j‰¿1ÉÒxj‰¿1ÉÒx          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docker-compose.yml        j‰¿5¾[j‰¿5¾[          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/api/protocol-spec.md j‰¿5¾[j‰¿5¾[          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/api/rest-api.md      j‰¿5¾[j‰¿5¾[          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/api/websocket-api.md j‰¿5Sétj‰¿5Sét          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ )docs/architecture/adr/001-use-qwen-llm.md j‰¿5Sétj‰¿5Sét          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 4docs/architecture/adr/002-langgraph-orchestration.md      j‰¿5Sétj‰¿5Sét          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ *docs/architecture/adr/003-crewai-agents.md        j‰¿5Sétj‰¿5Sét          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 0docs/architecture/adr/004-memory-architecture.md  j‰¿5cGpj‰¿5cGp          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (docs/architecture/agent_orchestration.md  j‰¿5cGpj‰¿5cGp          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "docs/architecture/memory_system.md        j‰¿5Ádj‰¿5Ád          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/architecture/security.md     j‰¿5cGpj‰¿5cGp          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (docs/architecture/system_architecture.md  j‰¿5µ¹Lj‰¿5µ¹L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘  docs/development/contributing.md  j‰¿5¾[j‰¿5¾[          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/development/evaluation.md    j‰¿5¾[j‰¿5¾[          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #docs/development/release-process.md       j‰¿5¾[j‰¿5¾[          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/development/testing.md       j‰¿5‘	€j‰¿5‘	€          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ docs/getting-started/README.md    j‰¿5¡Õj‰¿5¡Õ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ %docs/getting-started/configuration.md     j‰¿5‘	€j‰¿5‘	€          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $docs/getting-started/installation.md      j‰¿5¡Õj‰¿5¡Õ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "docs/getting-started/quickstart.md        j‰¿5µ¹Lj‰¿5µ¹L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !docs/user-guide/chat-interface.md j‰¿5µ¹Lj‰¿5µ¹L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &docs/user-guide/completion-features.md    j‰¿5¯‘èj‰¿5¯‘è          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "docs/user-guide/intellij-plugin.md        j‰¿5¡Õj‰¿5¡Õ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #docs/user-guide/vscode-extension.md       j‰¿4/ôj‰¿4/ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ /editor-clients/intellij-plugin/build.gradle.kts   j‰¿4/ôj‰¿4/ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 2editor-clients/intellij-plugin/settings.gradle.kts        j‰¿4%g¨j‰¿4%g¨          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ Veditor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/AICoworkPlugin.kt    j‰¿4Cê4j‰¿4Cê4          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ ^editor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/actions/ActionHandlers.kt    j‰¿4Cê4j‰¿4Cê4          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ Veditor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/chat/ChatPanel.kt    j‰¿4Cê4j‰¿4Cê4          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ [editor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/chat/ChatToolWindow.kt       j‰¿4Cê4j‰¿4Cê4          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ [editor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/chat/MessageHandler.kt       j‰¿4%g¨j‰¿4%g¨          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ ]editor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/client/AICoworkClient.kt     j‰¿44§,j‰¿44§,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ `editor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/client/ConnectionManager.kt  j‰¿44§,j‰¿44§,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ Weditor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/client/Protocol.kt   j‰¿44§,j‰¿44§,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ eeditor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/completion/CompletionProvider.kt     j‰¿44§,j‰¿44§,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ ceditor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/completion/ContextCollector.kt       j‰¿44§,j‰¿44§,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ deditor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/completion/GhostTextRenderer.kt      j‰¿4Cê4j‰¿4Cê4          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ ]editor-clients/intellij-plugin/src/main/kotlin/com/aicowork/intellij/config/PluginSettings.kt     j‰¿4S,j‰¿4S,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ Eeditor-clients/intellij-plugin/src/main/resources/META-INF/plugin.xml     j‰¿3Ïj‰¿3Ï          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ *editor-clients/shared-protocol/messages.py        j‰¿3Ïj‰¿3Ï          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 3editor-clients/shared-protocol/protocol.schema.json       j‰¿3›G€j‰¿3›G€          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'editor-clients/shared-protocol/utils.py   j‰¿3ªƒj‰¿3ªƒ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ -editor-clients/vscode-extension/.vscodeignore     j‰¿3›G€j‰¿3›G€          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ ,editor-clients/vscode-extension/package.json      j‰¿3»<\j‰¿3»<\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ <editor-clients/vscode-extension/src/chat/chatViewProvider.ts      j‰¿3Ù\j‰¿3Ù\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 2editor-clients/vscode-extension/src/chat/panel.css        j‰¿3Ê
+üj‰¿3Ê
+ü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 3editor-clients/vscode-extension/src/chat/panel.html       j‰¿3Ê
+üj‰¿3Ê
+ü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 1editor-clients/vscode-extension/src/chat/panel.js j‰¿3ªƒjšm})†²˜          ¤          åÂ‡5İ>XçÔT æB:ªŸ›ùO <editor-clients/vscode-extension/src/client/aiCoworkClient.ts      j‰¿3ªƒjšmgõbä          ¤          É¾Ë`vÍk6Anq'Í™»Æ ¤İ, 8editor-clients/vscode-extension/src/client/connection.ts  j‰¿3»<\jšmQ#ïÔ          ¤          Ò È>|'ÿ¹ÊLšÜŠkèÛj 6editor-clients/vscode-extension/src/client/protocol.ts    j‰¿3Ù\j‰¿3Ù\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 8editor-clients/vscode-extension/src/commands/handlers.ts  j‰¿3Ù\j¥%)€`          ¤          "ãsº²+CÓÛìOšøssäH£ö @editor-clients/vscode-extension/src/commands/registerCommands.ts  j‰¿3»<\j¤Ü4­˜          ¤          ”»'aø9«)¤!dPS¸ò$õ¿¼ Deditor-clients/vscode-extension/src/completion/completionProvider.ts      j‰¿3»<\j‰¿3»<\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ Beditor-clients/vscode-extension/src/completion/context_provider.ts        j‰¿3»<\j‰¿3»<\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ <editor-clients/vscode-extension/src/completion/ghost_text.ts      j‰¿3èotj‰¿3èot          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 6editor-clients/vscode-extension/src/config/settings.ts    j‰¿3ªƒj¤Î´ÛL          ¤          	×'Sö/–ïã¾z5¹vß*Ê. 0editor-clients/vscode-extension/src/extension.ts  j‰¿4ó,j‰¿4ó,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 7editor-clients/vscode-extension/src/utils/file_utils.ts   j‰¿4ó,j‰¿4ó,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 3editor-clients/vscode-extension/src/utils/logger.ts       j‰¿4/ôj‰¿4/ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 7editor-clients/vscode-extension/test/completion.test.ts   j‰¿4/ôj‰¿4/ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 6editor-clients/vscode-extension/test/extension.test.ts    j‰¿3›G€j‰¿3›G€          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ -editor-clients/vscode-extension/tsconfig.json     j‰¿4S,j‰¿4S,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ evaluation/__init__.py    j‰¿4®ÊÀj‰¿4®ÊÀ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !evaluation/benchmarks/__init__.py j‰¿4¾«üj‰¿4¾«ü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ +evaluation/benchmarks/aicowork_benchmark.py       j‰¿4¾«üj‰¿4¾«ü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #evaluation/benchmarks/comparison.py       j‰¿4®ÊÀj‰¿4®ÊÀ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ *evaluation/benchmarks/copilot_benchmark.py        j‰¿4buXj‰¿4buX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ evaluation/ragas/__init__.py      j‰¿4‘ï@j‰¿4‘ï@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ evaluation/ragas/dataset.py       j‰¿4q¶lj‰¿4q¶l          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ evaluation/ragas/evaluator.py     j‰¿4buXj‰¿4buX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ evaluation/ragas/metrics.py       j‰¿4 ñpj‰¿4 ñp          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ +evaluation/ragas/reporters/html_reporter.py       j‰¿4 ñpj‰¿4 ñp          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ +evaluation/ragas/reporters/json_reporter.py       j‰¿4‘ï@j‰¿4‘ï@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ evaluation/ragas/scorecard.py     j‰¿4Õj@j‰¿4Õj@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ infrastructure/docker/.env        j‰¿4Í@j‰¿4Í@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &infrastructure/docker/Dockerfile.nginx    j‰¿4Í@j‰¿4Í@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'infrastructure/docker/Dockerfile.qdrant   j‰¿4Í@j‰¿4Í@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'infrastructure/docker/Dockerfile.server   j‰¿4¾«üj‰¿4¾«ü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (infrastructure/docker/docker-compose.yml  j‰¿4Õj@j‰¿4Õj@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (infrastructure/kubernetes/configmap.yaml  j‰¿4Õj@j‰¿4Õj@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ )infrastructure/kubernetes/deployment.yaml j‰¿4äÊ0j‰¿4äÊ0          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &infrastructure/kubernetes/ingress.yaml    j‰¿4Õj@j‰¿4Õj@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &infrastructure/kubernetes/service.yaml    j‰¿5‘Tj‰¿5‘T          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 3infrastructure/monitoring/prometheus/prometheus.yml       j‰¿5bœj‰¿5bœ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ /infrastructure/qdrant/config/qdrant_config.yaml   j‰¿4ôU|j‰¿4ôU|          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #infrastructure/qdrant/init/setup.sh       j‰¿1»h j‰¿1»h           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ pyproject.toml    j‰¿1»h j‰¿1»h           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ requirements.txt  j‰¿51%j‰¿51%          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/build_extensions.sh       j‰¿5@M$j‰¿5@M$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/dev/start_server.sh       j‰¿5@M$j‰¿5@M$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/dev/watch_intellij.sh     j‰¿5@M$j‰¿5@M$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/dev/watch_vscode.sh       j‰¿5!ÛÈj‰¿5!ÛÈ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/download_models.py        j‰¿51%j‰¿51%          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/package_extension.sh      j‰¿51%j‰¿51%          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/run_tests.sh      j‰¿5!ÛÈj‰¿5!ÛÈ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/seed_memory.py    j‰¿5‘Tj‰¿5‘T          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ scripts/setup.sh  j‰¿1ÉÒxj‰¿1ÉÒx          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/__init__.py        j‰¿3\ j‰¿3\           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/__init__.py    j‰¿3?†Ôj‰¿3?†Ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !server/api/middleware/__init__.py j‰¿3?†Ôj‰¿3?†Ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/middleware/auth.py     j‰¿3?†Ôj‰¿3?†Ô          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/middleware/cors.py     j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/__init__.py     j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/approval.py     j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/chat.py j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/completion.py   j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/evaluation.py   j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/health.py       j‰¿3,,$j‰¿3,,$          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/routes/memory.py       j‰¿3OE°j‰¿3OE°          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘  server/api/websocket/__init__.py  j‰¿3OE°j‰¿3OE°          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘  server/api/websocket/handlers.py  j‰¿3OE°j‰¿3OE°          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/api/websocket/manager.py   j‰¿1Ù)j‰¿1Ù)          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/core/__init__.py   j‰¿1ènÌj‰¿1ènÌ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/core/config.py     j‰¿1ènÌj‰¿1ènÌ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/core/container.py  j‰¿1÷µXj‰¿1÷µX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/core/exceptions.py j‰¿1÷µXj‰¿1÷µX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/core/logging.py    j‰¿2%v j‰¿2%v           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/crews/__init__.py  j‰¿2%v j‰¿2%v           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/crews/base_crew.py j‰¿2¡M\j‰¿2¡M\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/crews/deployment_crew/__init__.py  j‰¿2°–@j‰¿2°–@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/crews/deployment_crew/agents.py    j‰¿2°–@j‰¿2°–@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $server/crews/deployment_crew/crew.py      j‰¿2°–@j‰¿2°–@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ %server/crews/deployment_crew/tasks.py     j‰¿26gXj‰¿26gX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $server/crews/design_crew/__init__.py      j‰¿26gXj‰¿26gX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "server/crews/design_crew/agents.py        j‰¿2E»,j‰¿2E»,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘  server/crews/design_crew/crew.py  j‰¿2E»,j‰¿2E»,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !server/crews/design_crew/tasks.py j‰¿2’ìj‰¿2’ì          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ +server/crews/documentation_crew/__init__.py       j‰¿2¡M\j‰¿2¡M\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ )server/crews/documentation_crew/agents.py j‰¿2¡M\j‰¿2¡M\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'server/crews/documentation_crew/crew.py   j‰¿2¡M\j‰¿2¡M\          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/crews/documentation_crew/tasks.py  j‰¿2E»,j‰¿2E»,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ ,server/crews/implementation_crew/__init__.py      j‰¿2E»,j‰¿2E»,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ *server/crews/implementation_crew/agents.py        j‰¿2Tşüj‰¿2Tşü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ .server/crews/implementation_crew/completion.py    j‰¿2Tşüj‰¿2Tşü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/crews/implementation_crew/crew.py  j‰¿2E»,j‰¿2E»,          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ )server/crews/implementation_crew/tasks.py j‰¿2%v j‰¿2%v           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ )server/crews/requirement_crew/__init__.py j‰¿26gXj‰¿26gX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'server/crews/requirement_crew/agents.py   j‰¿26gXj‰¿26gX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ %server/crews/requirement_crew/crew.py     j‰¿26gXj‰¿26gX          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/crews/requirement_crew/tasks.py    j‰¿2Tşüj‰¿2Tşü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ %server/crews/testing_crew/__init__.py     j‰¿2Tşüj‰¿2Tşü          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #server/crews/testing_crew/agents.py       j‰¿2dHDj‰¿2dHD          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !server/crews/testing_crew/crew.py j‰¿2dHDj‰¿2dHD          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "server/crews/testing_crew/tasks.py        j‰¿2°–@j‰¿2°–@          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/foundation/__init__.py     j‰¿3\ j‰¿3\           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/foundation/evaluation/__init__.py  j‰¿3\ j‰¿3\           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'server/foundation/evaluation/metrics.py   j‰¿3\ j‰¿3\           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ )server/foundation/evaluation/scorecard.py j‰¿2¿ĞLj‰¿2¿ĞL          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !server/foundation/llm/__init__.py j‰¿2¿ĞLj‰¿2¿ĞL          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/foundation/llm/model_manager.py    j‰¿2¿ĞLj‰¿2¿ĞL          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $server/foundation/llm/qwen_client.py      j‰¿2¿ĞLj‰¿2¿ĞL          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "server/foundation/llm/tokenizer.py        j‰¿2¿ĞLj‰¿2¿ĞL          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $server/foundation/memory/__init__.py      j‰¿2Ïlj‰¿2Ïl          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ +server/foundation/memory/decision_memory.py       j‰¿2Ïlj‰¿2Ïl          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/foundation/memory/embeddings.py    j‰¿2Ïlj‰¿2Ïl          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "server/foundation/memory/ingest.py        j‰¿2Ïlj‰¿2Ïl          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ %server/foundation/memory/retriever.py     j‰¿2Ïlj‰¿2Ïl          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #server/foundation/memory/schemas.py       j‰¿2Ïlj‰¿2Ïl          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/foundation/memory/vector_store.py  j‰¿2ŞRj‰¿2ŞR          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ #server/foundation/tools/__init__.py       j‰¿31lj‰¿31l          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'server/foundation/tools/file_watcher.py   j‰¿31lj‰¿31l          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ "server/foundation/tools/git_ops.py        j‰¿2üóÜj‰¿2üóÜ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !server/foundation/tools/linter.py j‰¿2ŞRj‰¿2ŞR          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/foundation/tools/memory_search.py  j‰¿2íœ„j‰¿2íœ„          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/foundation/tools/repo_reader.py    j‰¿2íœ„j‰¿2íœ„          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/foundation/tools/repo_writer.py    j‰¿2üóÜj‰¿2üóÜ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ (server/foundation/tools/symbol_search.py  j‰¿31lj‰¿31l          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/foundation/tools/test_runner.py    j‰¿1Ù)j‰¿1Ù)          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/main.py    j‰¿2Œj‰¿2Œ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/orchestrator/__init__.py   j‰¿2/Lj‰¿2/L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/orchestrator/approval.py   j‰¿2/Lj‰¿2/L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/orchestrator/graph.py      j‰¿2Œj‰¿2Œ          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ %server/orchestrator/phase_registry.py     j‰¿2/Lj‰¿2/L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/orchestrator/router.py     j‰¿2/Lj‰¿2/L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/orchestrator/state.py      j‰¿2/Lj‰¿2/L          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ !server/orchestrator/supervisor.py j‰¿3OE°j‰¿3OE°          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/tests/__init__.py  j‰¿3^"Äj‰¿3^"Ä          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $server/tests/integration/test_api.py      j‰¿3m‘(j‰¿3m‘(          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ +server/tests/integration/test_evaluation.py       j‰¿3m‘(j‰¿3m‘(          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ 'server/tests/integration/test_memory.py   j‰¿3^"Äj‰¿3^"Ä          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ server/tests/unit/test_crews.py   j‰¿3^"Äj‰¿3^"Ä          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ $server/tests/unit/test_foundation.py      j‰¿3OE°j‰¿3OE°          ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ &server/tests/unit/test_orchestrator.py    j‰¿1»h j‰¿1»h           ¤            æâ›²ÑÖCK‹)®wZØÂäŒS‘ setup.py  TREE  ü 190 6
+dè5y‡kˆ©ñê–š_ÀÒ(ÙP¢docs 23 5
+”Z¸ ™iæ@ˆØ//ÏKapi 3 0
+æÉÀm‘:78k²İ§ö›Èo´â–user-guide 4 0
+åÄ*;;a%¤}ŠÌ¨`U¹ÕGñî?development 4 0
+ûÖ,VL®‚›jÆ:§Ÿ(DkDšƒarchitecture 8 1
+ŞA:LÔk(çQ@Ânàr!Æ¾[Éadr 4 0
+8^`‚Rˆ¯‹_Ö®MkPUægetting-started 4 0
+7
+‡#;‘áÚbEålß?tà,™âserver 86 6
+¦ã([[(ª> äZN&´|Äìapi 14 3
+Î|ÏLğÜ¤}UÙÁ8p²Ïçòroutes 7 0
+qø—&—ëhot·¯Š~Wwebsocket 3 0
+…¶„ß–Ï‘J`£ôâø©%˜¦middleware 3 0
+,}p^Ÿƒ¨¨&ò:ˆÂÍcore 5 0
+ç£6!«âŒ_1Gô ÖìÃª<Hˆ€crews 27 6
+8!9.9	
+e-*¤
+»‚šavbdesign_crew 4 0
+á¡‰a{é¸$Qúºš09Ñuü{qtesting_crew 4 0
+á¡‰a{é¸$Qúºš09Ñuü{qdeployment_crew 4 0
+á¡‰a{é¸$Qúºš09Ñuü{qrequirement_crew 4 0
+á¡‰a{é¸$Qúºš09Ñuü{qdocumentation_crew 4 0
+á¡‰a{é¸$Qúºš09Ñuü{qimplementation_crew 5 0
+J™>ï+Ñ½•Sƒ+Øä%Hûtests 7 2
+)CgJºÃr	š §\‹3.6Yunit 3 0
+ i;+ Œ¹«HßÅÎNq"integration 3 0
+”Şâ«yYÑä/ãµı	ƒ’W4€foundation 24 4
+T]ÚœWìÖ±@Şj>PÚ")Š³&Ôllm 4 0
+/!²ª¾Şèÿ1øçR[î÷wCÑtools 9 0
+w®>oê =Ş—,Ê›2£ &memory 7 0
+× QûEÔ9 bbOÛr6^‘Ãnevaluation 3 0
+n%;ê
+Æ%éG³=jõœ•orchestrator 7 0
+Vq¸à—Q¢J{A"Ú£Š£Ã:Ascripts 9 1
+ŒÆÙÎgò^,UËê$Ã,)Çìdev 3 0
+$]âú=IÙÕ°ÃÍbÁì;s‚evaluation 12 2
+~^B‰§ÎH`ºªâRŸ'fÔ*·úragas 7 1
+/êdúÖ^â¦{ÍBNº×‡Ùreporters 2 0
+N¨ÎÜ‡Ô³1+îó2Ğ·úvÃ benchmarks 4 0
+g‘¼â®klÑşËÆšS¿’ˆeditor-clients 39 3
+Ò
+ùIø#Ô€&B·¯(‘¶Ëintellij-plugin 15 1
+HFº1mß	f—ã×MÓZ®õÖsrc 13 1
+k"ß";ÍßÚI¨ §Î¼Š.àºmain 13 2
+Ì(Ş×¬b1»âá±gMêVëxkotlin 12 1
+İÚ¸`VéTA®¶[µC¬¢
+4ùcom 12 1
+‚İ«@`|W´Ú<¼Ëø,&{Üaicowork 12 1
+l×ƒ”ğ]äep±67Jrûintellij 12 5
+¾êÒhWr4ê¢Ä]™°Oä¦aŸchat 3 0
+tÅkUP·¹{ÈqK¡‚!¥9½client 3 0
+¦GèAtLC’uûpdp}´‰—config 1 0
+ğ¸3Àœ†ÇXI=•âIH(ÿactions 1 0
+Ùç>!PÁ¦Fnë€{Á^ÿrcompletion 3 0
+áURõ
++¡×ÔÎ…§©uìáresources 1 1
+›™'f……q» É˜8mÉ
+ûMETA-INF 1 0
+ôzX±ûVïû+OY*öU)~¤shared-protocol 3 0
+ÿø©êî?‚·KQÂèuY &vscode-extension 21 2
+Ëš%Gğ™.pòÒËëÑysrc 16 6
+¿åG&7Q³H‘ÌfdõŠ:chat 4 0
+‰´GÔi¬î‚9;=w´PgÛİ+utils 2 0
+]š„Wã„òW"QÓäYÅ—\‚client 3 0
+ÓQí€wÑY*\³…U_s+VÂØconfig 1 0
+/'Lú‹$ØU¸×©»dL¤Lã“commands 2 0
+Á¤>‚÷şzbN²…²uÖÜöáö'completion 3 0
+÷oò?m[ÁøÉÂlÄ‚>G9test 2 0
+ó—æÑT”¢w0ÒÕhÈø	[~Ginfrastructure 12 4
+Ÿ4_ĞÃ<YÇÑÔ;QŒš¯s †docker 5 0
+µD²›¼!0‚½úEİ\nd Sqdrant 2 2
+3óáè*F·=Á¤á®e–D?úinit 1 0
+ùê½5bÑ ¢Ì7¯õö¨°config 1 0
+íÃCˆå*+väNÂC6ÛUìkubernetes 4 0
+”ÌÎ_Å4k"W8œ§šØ]Mƒ¥(monitoring 1 1
+üóM¤/Kİ¤˜tSŞÏš!prometheus 1 0
+DÖrkíøa(Ø E¾ƒˆè@4½Cã{†­`XÛ%T«*Ò°è.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\ORIG_HEAD === 
+e75d92d04526a9e9ef47030985ffaa28179091b7
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\packed-refs === 
+# pack-refs with: peeled fully-peeled sorted 
+e75d92d04526a9e9ef47030985ffaa28179091b7 refs/heads/main
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\filter-repo\already_ran === 
+This file exists to allow you to filter again without --force,
+and to specify that metadata files should be updated instead
+of rewritten.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\filter-repo\changed-refs === 
+refs/heads/main
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\filter-repo\commit-map === 
+old                                      new
+b90672f07f22035b04cbe5307a70b204e2f2c5f0 267f9f1ee21d8126fd1c01bcc8eeb75ac19e5955
+c02a3bc8096dd34d6003bb4cbb583fdf0437a56d e4067daa5fd88618d68160b52c27aa857373d0fd
+d3100f9c28eee8756085def551d7a98c1e73a322 e75d92d04526a9e9ef47030985ffaa28179091b7
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\filter-repo\first-changed-commits === 
+b90672f07f22035b04cbe5307a70b204e2f2c5f0 267f9f1ee21d8126fd1c01bcc8eeb75ac19e5955
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\filter-repo\ref-map === 
+old                                      new                                      ref
+d3100f9c28eee8756085def551d7a98c1e73a322 e75d92d04526a9e9ef47030985ffaa28179091b7 refs/heads/main
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\filter-repo\suboptimal-issues === 
+No filtering problems encountered.
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\applypatch-msg.sample === 
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\commit-msg.sample === 
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\fsmonitor-watchman.sample === 
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\post-update.sample === 
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\pre-applypatch.sample === 
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\pre-commit.sample === 
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff-index --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\pre-merge-commit.sample === 
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\pre-push.sample === 
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\pre-rebase.sample === 
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\pre-receive.sample === 
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\prepare-commit-msg.sample === 
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\push-to-checkout.sample === 
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\sendemail-validate.sample === 
+#!/bin/sh
+
+# An example hook script to validate a patch (and/or patch series) before
+# sending it via email.
+#
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it wants to prevent the email(s) from being sent.
+#
+# To enable this hook, rename this file to "sendemail-validate".
+#
+# By default, it will only check that the patch(es) can be applied on top of
+# the default upstream branch without conflicts in a secondary worktree. After
+# validation (successful or not) of the last patch of a series, the worktree
+# will be deleted.
+#
+# The following config variables can be set to change the default remote and
+# remote ref that are used to apply the patches against:
+#
+#   sendemail.validateRemote (default: origin)
+#   sendemail.validateRemoteRef (default: HEAD)
+#
+# Replace the TODO placeholders with appropriate checks according to your
+# needs.
+
+validate_cover_letter () {
+	file="$1"
+	# TODO: Replace with appropriate checks (e.g. spell checking).
+	true
+}
+
+validate_patch () {
+	file="$1"
+	# Ensure that the patch applies without conflicts.
+	git am -3 "$file" || return
+	# TODO: Replace with appropriate checks for this patch
+	# (e.g. checkpatch.pl).
+	true
+}
+
+validate_series () {
+	# TODO: Replace with appropriate checks for the whole series
+	# (e.g. quick build, coding style checks, etc.).
+	true
+}
+
+# main -------------------------------------------------------------------------
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = 1
+then
+	remote=$(git config --default origin --get sendemail.validateRemote) &&
+	ref=$(git config --default HEAD --get sendemail.validateRemoteRef) &&
+	worktree=$(mktemp --tmpdir -d sendemail-validate.XXXXXXX) &&
+	git worktree add -fd --checkout "$worktree" "refs/remotes/$remote/$ref" &&
+	git config --replace-all sendemail.validateWorktree "$worktree"
+else
+	worktree=$(git config --get sendemail.validateWorktree)
+fi || {
+	echo "sendemail-validate: error: failed to prepare worktree" >&2
+	exit 1
+}
+
+unset GIT_DIR GIT_WORK_TREE
+cd "$worktree" &&
+
+if grep -q "^diff --git " "$1"
+then
+	validate_patch "$1"
+else
+	validate_cover_letter "$1"
+fi &&
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = "$GIT_SENDEMAIL_FILE_TOTAL"
+then
+	git config --unset-all sendemail.validateWorktree &&
+	trap 'git worktree remove -ff "$worktree"' EXIT &&
+	validate_series
+fi
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\hooks\update.sample === 
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\info\exclude === 
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\info\refs === 
+e75d92d04526a9e9ef47030985ffaa28179091b7	refs/heads/main
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\logs\HEAD === 
+e75d92d04526a9e9ef47030985ffaa28179091b7 2072ba97ddb2023d73c2327931508199e0980cf7 Ramit Singh <ramitdel@gmail.com> 1788782061 +0530	commit: Added extensions main code
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\logs\refs\heads\main === 
+e75d92d04526a9e9ef47030985ffaa28179091b7 2072ba97ddb2023d73c2327931508199e0980cf7 Ramit Singh <ramitdel@gmail.com> 1788782061 +0530	commit: Added extensions main code
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\logs\refs\remotes\origin\main === 
+0000000000000000000000000000000000000000 2072ba97ddb2023d73c2327931508199e0980cf7 Ramit Singh <ramitdel@gmail.com> 1788782073 +0530	update by push
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\20\72ba97ddb2023d73c2327931508199e0980cf7 === 
+xAj1E³ö)´/ÙÛ”\¡=2’“Œ]&ôø\¡Ë÷yŸ7÷u]„È‡±™AŒb*L%_‰„«7ñ‘3Kª3j¤œP‚û‘ÍÚ +I9(N)dac«SÁˆL©V‘@¾0²¿'¯qï|É;÷½´Û>·7¨=Î·U–Çqîë	|!*0{øÀÑíënûÏ×]TMÁ~‡µçÒÛöPƒ¹«¹?
+uKT.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\27\53f62f9618ef16e3be7a35b90376df2a1aca2e === 
+xVÍnã6î9O1, 9ĞÊîÏöà¢‡Ôİ>(ô¾´DKL$R )Û©«G)zéö:CQÔOÖ@uˆcjæ›o¾ù¡•:À7ß}üş+Q7J[¸fàd2•s8jUCÔ‰~¸óWxØïÔYé—]%¸´ĞyÃt¹ƒ5Ó÷SÏª›Š[¡äoZDÎõÔ;¼\gáßÁnŠ¢y!ŒåÑj&s3ÇpGë¥ÍÔ¿RE1‹ÜZQ™uŒ†wHú\¶Ëdÿ„Væü($ÏÑ_œhÌ¼Ê­Ì(5`øqb–Ç™’–_ìÖš~ºX.šìú+¸Ş>}äTÈ£Š£‡ı‡^>@×Ş„©Î=0­04ùYıêèÛz{)¬`•øƒƒ-9rÕgãœÈ´ÿ
+?‚äçE†qO‰¬è1\Ÿ¸ş]W!	ª¼iXÆÓ‚[Lä(ŠV3J<˜ø¹ÖˆVô6‚{”@TZÛl×¨sÆªR»ıv³ÙD«$Ğ¢€š£j’gvÚéÃÀd67ªÙåq°{°–×5[ø€ºA!BD]&A‚UN—Ë^¸Ì}rÁ‹™
+Ÿz1"=³2yHè(ô:TŠÜ‘Ç£ï\Çblrhü4„Pİ •7càK†¿˜£¸/é„íâgaeØ¡âÒuZ1Y´¬à&æe/+ìíâ3z”Î†Òk¹…èş~}Ÿ^ŸMbMòl.øqIš×ä™X’5M’%eR¨D›.‚n^Ê·9†(ódh’RÓL¦ECífÒ¦5%Ù Å˜á¢üAvVU$ª[!LÊ (Ó 
+êá^ø	úßĞ~O%÷™WHCÍÁ’z¾Tg!suNšîqOèÚÜ¯½ñ—·Æ°‡òwğïßÿüµlÆ'ÜrmÆ2Û80‹âö²ôobšalÏ&Ó÷Ü“Cğ6±ç*QÈ/ŠôQ¥MàëÍf¢Û,@JEÆ(ÑûWŒ~©ø
+gËïCÜÌÔwô,œ”ª¬hÈoD\™˜M=(ŞXK–¿ŞÄğ]Aa‰¥ªárW2{Ó‹ª1İñV›Î(õï c6+!æZ+=\”¡ß5î<~a¢ê7ÍPÓQ–ñšÀÛãŒB½mOih›ÏAÜ-Œ1¼n´Øæëlï¯.B÷ÙW°»ënİ‚9¸ÆCb³B	Ğ=Ü„,Ò4¥¦%=Üq„aÏMî½ù-HÆ³Eü5ãaZ)2›ÑÁ¹ûÅıò{i®Â@‰ npÀÑ)y«13Yá&ûBá:—0ÊûŠO.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\64\e83579876b88a9f1ea13969a5fc0d228d950a2 === 
+x+)JMU057d040031QĞKÍ+ÓK­HÌ-ÈIex6÷ÑìM¯9{wk®+ºqèIOğD˜ºôÌ’Ìô¼ü"¼ª|<]ı‚]ñä›˜š–‰ß² WG_W½Ü†×Y'_Öï[¦ñ\Í=0K³¨•ê¢”üäìÔ"İäüÜ‚üâT½ÊÜ¬Öš Pq1Ã”ş¨33Ÿ9ô
+wÜĞÕ?/ì‘NMÉ,Éš•“™šWRÌp‰ë§gÿå+j½NÛ×KkLÜvª°,1§4±$3?¡.Î©sù9„]«Í›¯vEkû/ˆ¢Ì¼´¢Äâ’¢Òä’R`xÍ7‰¿pØ&òøEyW¬{f­/^ĞõCAeAQ~Vjr‰^I>÷CU¥–f¥æ‚Ü§WRQ‚Ç¯ÅÉE™@_ô»)q.ıœÎÜĞÓ¯Tëhq`qjQYjÃ²ÇÑÑ«ìøDÉø©‰l©9òj]qjIi^A%Vk ÇÏön.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\bb\2761f839ab0429a421645053b81bf224f5bfbc === 
+xİXİoÛ6ßsşŠë“å!S
+Ã0g9Ù-èŠ4{‚¢ )Ææ"‹I95Rÿï»ã‡$JjlE¦Û"ïÈ»ß}{Uª|ûâ»ï¿’ÛZi_3°3\îµÚÂÌ¿ÌNÅœ_-Õ£ÒËRŠÊÂ!æù	w+'Lö	ú¬KUYñÎ¾Òj'¡;ŞîwŞÖa«ÏõËF{‹|7¢B®„oM{oéĞ>G©Öë>Y~ÒXYš¿”GâÓ——ÌXªm]
++UÕJ†Ú–b‹úE8ò«ª”•èH¯¬Ø¶äOG€O­åY‡Å ©Ó”&…bB$Ø¤ÔNÍ¨şFˆ¤Ô…X©¦ââVn…^ÀK´æ¯¯szS…÷Ğ Œ÷¨L‘²iÁ
+U•{¸¸üé÷?^./ß^\^Ÿÿ	gğâùóS89­9rJ µŒÕ·JgÓÊÎáÉQ,v#MîÉğ,ÿÃßÜí¦Ê#Y%‡dóW‚JàA¹^tföGK9œ²©ÉZÁÅòE‰œœğ",·dµ2’œ§%{:’àŞ-Åğâ`üÁªÑ¸dhÍ²dtË-í¸»ç@ÜJ#~ğQ:é£woúÿ±g4èëYƒ¼‡JY00MM!
+(YµnØZ´j"YöÌÙRš×‘ì:Pe«<ò]ó¾©µ°®†îG;Á8ô¥Zn ±ìF@c0’¥Æ­Ü	ôN»¯eµ†Œí”,€·±k h4íhVã†'›'â3äVKJ¿Éª€³³³hŞ¡Un;²ü¼±j‹àC¥PŞ‹oÀ"„L{=©ôwÆíJá1D:Fõ\V8ç½ HûYiÀ”VJ.m{7d¥|ğ ö+Åtfƒ–åãZq™On·¢˜³Ê}+i_Êµ¨„ÆíOHÙ.s¡·	mÛû¢ç´ÁñÿŠ² 'å³­Y¦…QåNÌá¬ÑûKÁ4°j•Æ’GGøÀRFo‘#ŠÊÄ¡\Ò:)Qr:7)–.¹uÏ¿è•r…°˜ Hˆ3ó²6Şëİ!›ĞœnAo7ÃÄ4¥E>öÈÈ©|üG¤ã 'àñè^Á£‹îHË^è~Oºö„d­>Ÿk‰z`õ¾WÊÅª,·1ùfò2o´¦şï^–] &oÄ¸.˜e©%ÃÆ‚ësî/XúD7‘{† ã[péÅÕ¤ŞUS~ÿáªC'üÜwˆ9zx³Îf7âïFøìê<J»‰xÌá)‰%L­ŸÓëK¶ÇcÊ˜émÎÏ©Íì: äµ¨Öv³ˆ¯/"èjD^º½òÜdÁÅ1V=í5Ã²+Æ±£Àò ôn\ğdŒÇNõaj\‹º¶?GöJE×z<0¯)0'‘“b'Ñ#KWÅšÄf‚ºÑFéØ©-å%[|Ò4DÌ7Lc‡Bív4iŞ®4;Œå1ûíJ•&•>,©ı06 ‹Ém”Û¨aúAœ8÷´†}ÿí.)ÿs„¡şº
+p<Ğô–íİÎmR/€Şæk Ízqj+BÛğw}{´^'uÔ¯§ÈÔè’ãhÒDÊIH[¡?NKœÈpœ¤l+İôÙE8&òƒ•T„
+öGÆƒ1j­
+czgİ`ã/²L×²ÎÇ\ã4@²ÒR’œs.j‹³2–šèd³ñ!Ä‚öÜ²ª@&&¿áîOˆœ9ök‚	q’•¡ÕĞÏœ”*-ÎB1·ßãÿ8s!î÷JSß¯üÌEÒCñ3é^Uàœ²Ç@¶!_$uĞF_¡ip™^»a“Êİ´<¤7:YP2U´W/¼âöô%tNiÏÉâfb3â¢çğf´|8M–Õ<”ş»NRşM¯&€3Ë7	­•-tn/›]	„~ÚòîXlü©8n=¼SÊ©¹º«xÀÿ\ğZûWè­‚U=¿ñÁßNï×a,7è\w	B³¿Ø®emQèNÉ¢{ëö0óğAXJO«÷v£*:‰xé›×µû¢µ¢OİwT½q;ºYí>3òŞÑ<(‹5×`°¤:†İ–~ÅĞ—áÆ}—8ÀÎZiĞ¨ŞIÚ1{F.+^6…0Y‡*æçZG‡ ïÆN.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\bf\e5470b14263751050fb34891cc666411f58a3a === 
+x+)JMU021d01 …äŒÄ†Î-îW2×ˆ½k²´¶-ß.vû®6T:'35¯„ár äÛ†ò‹¼‘Z1›[Cã‹µÃİ€*ÈÏÍMÌK)f8¸Ä®éû¿ª$¿M­›J¯İùöğ³:\IANjIf~ÃwnéüOö¹rÑœ<”#¤ÉÎİ¦(/-3A_İçW·ÊĞ×W2íNñYâóx²¡™‰‰BjEIj^1Ğ½’bõàoúÓ$Ş‹=ŞWeº“¹ì¾–Ô)=ˆA¥%™9ÅŒ±³ZÂ·|
+W
+¼ü¤¿7òèô˜& DoeZ.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\c1\a43e82f7fe7a624eb285b275d6dcf6e1f60327 === 
+x+)JMU°0c040031QÈHÌKÉI-*Ö+)fx6÷ÑìM¯9{wk®+ºqèIOğD¨²¢ÔôÌâ’Ô"çüÜ\ °òÇÅ»6i;_¾ıÆVÿb¡â'‹¿ áË(î.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\cb\9a2547f0992e70f27fd21a18cbebd19e10799e === 
+x+)JMU0´0f040031QĞ++NÎOIÍLÏË/Jex6÷ÑìM¯9{wk®+ºqèIOğD¨Â‚ÄäìÄôT½¬âü<¬êL€@¡¸(™aÿSwn5ó@VşÍÏ¤¥~í²‚È–¤—0|şìbÈ”Elå—®NÈ8ñƒ3ºÎjI	Ğ1yi™é¸m lQ‰.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\d2\0af9498ff823d48010268d42b7af1b2891b6cb === 
+x+)JMU042g01 …Ì¼’ÔœœÌ,İ‚œÒôÌ<·]†¹â÷9Ód§?æ½î{9jİ×k•Å‰E©)ºEù%ùÉù9üsYÿÿXùê½@ÓvïÀC/J#Ô *ËŠ“óSRuS+JRóŠ3óóNÏRuÿ0S¯àSı%)‰Ó¯/Î¨œ P6ß.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\e3\73bab22b43d3dbec4f9a8ff8731273e448a3f6 === 
+xÕZİnä¶îõ>(¢™vVv(&p[Çn4›íz£H‹š–83Ìj¤©Dyl8sÙ»^½l±hŸ¡O”'È#ô;$E‰Ç?éUÁîJ$Ïïw~”«¢ºb¿øôğÓŸÈõ¦ªûã»n²*lQWk–˜‡ä³gvÇ{uv\m«úıq!E©ØÎnLÓƒL¿9àr¸ax´¨–KQ´JÍy?Üy¼âêk)¶oêêZæş™kôÇp?7ZˆE[fJV%«ÅR6JÔÇÕzÍË¼™<cøeU©Äš[9Ó“%ÊûÍÂÌìÒ²ÌiŸMİ±Ïe³©~Uv§O°·öB¦V‚‡ì2°¢»¾QzÑÉvÄJì
+EXFS0küª–3f”<ı, Fº`GL[YæÕ6íp!®ˆ‘¡¾Œ.H	—/2mÑ´Sjbt µ):Fû·FbZ§ßÖÿrCZoæVfÍüYÅe§à‹•(#ó\”s¦êVhIºİ;÷dşAõ›¡vyQÀŠÆ¦C5ØWPÃ7
+Î}¹¥±Æ†—¢pKÆµÓ’Ó–u—É@1H}’ä¶ÌØdÊ~ªêÛà	Å·\ÂtLõw‰‘µJ¸«( ®D™­R2ToòÔ'±&ïE›¸Ie¹¨&	ñÇ´„ŒØyxbÇ2®²›ˆº®êi„WKO¯O’S.‘3UizB†„qÂ!GVNëÍªÚĞe_ˆ¦áK1¢ùêŒ¬ĞÔG;Sí¦3ãtLú*ËÄQT­7…Ğ±n­èN„
+ïBÁiÜ)6åš,­ŞÈ¼^6/çŒ—·sƒw+Ù0ü§jIÀemáÛŒ³¶dº3Y²$¸;ŸV w ©–kÏî„é€‹¬puË¾>‡²r‘4ìª•…z!K¶ÙR6ëŞ…`ß¶ÀX”ÁıUÍ”(ÄZÀI½½rÁ&ZLøf¹ Ô–™¸Ç5¬«99¬p¶»#hµ$ 4èn@sÆò¶æd*»Ô=²]àØ;&Š¦Õ¡oùŞa!$ä	ê=Àv¿¯ZğÛ9kD™Ãf!ò+½gâšòÜPœŞĞú
+æõHâ³>²¨œÊI¤™ùdSc#HJƒ†bJ,Z~&>Ø5¢n7bÎ’Ş­şd|Ìá1ë’kÑ(¾ŞÌÙç\‰´¬¶„×pËğß9WÜ˜Œ}÷»ëñy¸)´!­=7´käh£t&¹p|~ú§1Ş™e¨
+™!$z¥±É±ª‹ŸŸox&Ø;^çößº-ÄÔiæ	b!†)$AØ TE.Â4Ìá@y-Ş¡8Ñ|Ì%/|nNÆÜmÇ¼.e¹t€üº"ÜÁöşƒÉFÈŞm]úïz<¦-(Ol+‘y«ª5Â=C®¾íğÑ”E}àzuQ¡_«°mÆÖü½ ÒBIÖ|Î(täq)Öh	hO „œIˆ|Ş·•Z{…Â{ˆó/xv°?<:Şq!xÍ–«
+&¦ºÓqşwÊˆÆ¯‰ù¢!V~8ÅÑfÊ:·e#—“ÚBÂšä>…­)†R=O[š[-0°ùåH¨¤·m‰J[çµœ"“,ÿcE‰‘RÑS‹4T„5„§UA=GŠİBli^¦ßşÑR…Ë`o,>iï8Fı’	ê(!‘kÎU[ê;"F¿X¸Òû dé•‘[kX¥ã-"ôR(¤µ…\Ú>¨Œ“iŠÕI2$ı'åfÍjÕ$HÌt³³.=ĞÏWÃVªÚeÂqO,*”³º°G»ı¿µéëJÉ ˆvÅœ’ª úêì…©CçìWäB@HêÚ¾E&OÓtO2Í8j¥¢ pÎEËH¨sEPÓÂDàßÈÏèB½õ±“;”Yš­D³z8C±§‹h°‹p!7Ú%GETGsÄ- )´”èNù°È‰n6.;´…BDxeJ-şÜ>5±=V¢ûœû¾áj5ïM˜¥m-ÓECkq#	íGÖEçŞS”éX=Bd¢›)X|iÓ¢hš}¡J$|?¥çíWMÉ®*]Zış±:šQ9Ş_´H‰ÏCğ$ÒİÏRc)GÁuÇªVmZ8…åÚ<îõ½uwßX$.¿ÿç_­0İÎÙOïìÕºÜ]F¼#îxFCF‹¢	8IôÓì©òE­}yoˆ}|xÕaèL¶1™aA¯Nv-kDqYc¨B²DÜû+ás¸,ê(;SB÷£°¤qú²÷[~›ûÆ"äıçö<¬«JBja‘AØ`¶0£ÙÅ€f?„FLX?h™€TÔz!úÕşx‘ôi´¿Œ0¨8h÷ ÷wƒ~‘`Î6qtHè%K~øğáßèõm'™0@şşş†™£åT” ¨¯EıU]Äj—G¤qŒ-ÌyŸ¬”ÚÌ0œEOµçü“ÃÃÃ¡(ÄÛĞÃØu#Øè S—.û²s­yòj£šİàÄ’~Õ1·»'Šä­°ª‰dëÄ9”wù4E‡_NFŒÛŒFzÄ¥‡Á–£#ä_w×¾LñÛ÷Ó§º§å[”î¶ĞaÁIô¿sàEqz(Ñ,v„aèôBÓ;9qUrÏD®×É}1HZ±ÓğÈ,ó‘“–Ü…Ôd 	Úı¼ŠÇúØ¾½
+€„Š§*3aí¡&Ã0ë˜ñJƒ€Æş“g,¢ïg-GœğôÁ¤EçÇÂŸg¿—ŠûóÏyRèv¿k%ÆvyƒK÷ó`Ùm~‚ÛÙÓ§òæØoºãÎšO.ÿã¸1ÆT³Ó-úXdöÓøÛ¹@^e-õ&Ô ÒX¢É œ)È¦´Ï‰P·Æ«Ş`–€á°a“5Õš†êøX	¼±Ö£I.ğ@WÇúâ 'ƒ†‘Tß
+|ó+q¼‚ãìé‚ø’bšŸPy´òš¯Å8£Ë/—->œÌGJïVÎòøI£!‘“eğ™Æ÷A6Z_ĞYµŸCô£zØ³)½$»5„™øàU˜1»£dR´KßC­3\t³—,íÃ]:FmsáÍ$T1úËYïë³}|ùO,ÑÏ›-ºF6å›Mq«9¢Û"ÎFgGJ¢—cÔH(÷şö/šˆA‡Œî’"ßÛ2z9Á?»P„Zé/Şòx¬?œ>üÔ8è¢ñQÉc¬?qœº‘pJ­’Şög>{ìŒcN§Å28Ğ¢ÿŸÒÿñĞï>†÷qƒIK×iB0ûî¿_V‡·.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\f7\0b1b6ff23f6d1e5bc1f8c9c26c1fc4823e4739 === 
+x+)JMU046g040031QHÎÏ-ÈI-ÉÌÏ(Ê/ËLI-Ò+)fØ­øÃr5‹æÅ”€àÒŸT¾îß×W’ZQ_€¤üÙÜG³7]¼æìİ­¹®<êÆ¡'=Á¡ÊÓ3ò‹KâA:@æbS Š=¶.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\info\commit-graph === 
+CGPH OIDF       DOIDL      DCDAT      €GDA2      ì          ø                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &Ÿâ&ı¼Èî·ZÁYUä}ª_Ø†Ö`µ,'ª…ssĞıç]’ĞE&©éïG	…ÿª(‘·ÕBö"j\¾`¶¿Ò4µ–lñÉêtp   p      j‰šÌ‰BJô(«ˆ$ı-1qĞW›v¢Ã    p      j‹(‹U6	U;+špC·³ÌF   p      jšnX            õ„ƒ9 í“ï<ñÜ™íÙDş»Ê.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\info\packs === 
+P pack-7b99e3090fb992dcfac98b5c3111adf27baeaf1e.pack
+
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\pack\pack-7b99e3090fb992dcfac98b5c3111adf27baeaf1e.idx === 
+ÿtOc                                                                                 	   	   	   	                                                                                                                                                                                                                                                                                                             !   !   !   !   "   "   "   #   #   #   #   %   %   %   &   '   (   (   (   (   (   (   +   +   +   +   +   +   +   ,   ,   ,   ,   -   .   .   .   .   /   /   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   2   2   2   2   2   2   2   2   2   4   4   4   4   5   5   5   5   5   6   6   6   6   6   7   8   9   9   9   9   9   :   :   ;   ;   <   <   <   <   <   <   =   >   ?   ?   A   A   A   B   C   E   G   G   H   H   I   I   J   J   J   K   K   K   L   M   M   M   M   M   M   M   N   O   O   O   O È>|'ÿ¹ÊLšÜŠkèÛj]š„Wã„òW"QÓäYÅ—\‚tÅkUP·¹{ÈqK¡‚!¥9½)CgJºÃr	š §\‹3.6Yg‘¼â®klÑşËÆšS¿’ˆÿø©êî?‚·KQÂèuY &Ùç>!PÁ¦Fnë€{Á^ÿrùê½5bÑ ¢Ì7¯õö¨°´•—ğÖŞ¯*QR‚­Ç£/êdúÖ^â¦{ÍBNº×‡Ù8!9.9	
+e-*¤
+»‚šavb&Ÿâ&ı¼Èî·ZÁYU,}p^Ÿƒ¨¨&ò:ˆÂÍ/!²ª¾Şèÿ1øçR[î÷wCÑ/'Lú‹$ØU¸×©»dL¤Lã“3óáè*F·=Á¤á®e–D?ú7
+‡#;‘áÚbEålß?tà,™â>Ñ"U¯zJ2*+õL€ƒÍf9Ô@f:áƒ;D}«´
+õ’=ş<ÏDÖrkíøa(Ø E¾ƒˆè@4½HFº1mß	f—ã×MÓZ®õÖJ™>ï+Ñ½•Sƒ+Øä%HûN¨ÎÜ‡Ô³1+îó2Ğ·úvÃ T]ÚœWìÖ±@Şj>PÚ")Š³&ÔU6	U;+špC·³ÌFVq¸à—Q¢J{A"Ú£Š£Ã:Ak"ß";ÍßÚI¨ §Î¼Š.àºl×ƒ”ğ]äep±67Jrûn%;ê
+Æ%éG³=jõœ•qø—&—ëhot·¯Š~WtšÌº=öÌŒ.ú!à/ûw®>oê =Ş—,Ê›2£ &~^B‰§ÎH`ºªâRŸ'fÔ*·ú‚İ«@`|W´Ú<¼Ëø,&{Ü…¶„ß–Ï‘J`£ôâø©%˜¦‰BJô(«ˆ$ı-1qĞW›v¢Ã‰´GÔi¬î‚9;=w´PgÛİ+ŒÆÙÎgò^,UËê$Ã,)Çì$]âú=IÙÕ°ÃÍbÁì;s‚8^`‚Rˆ¯‹_Ö®MkPUæ”Z¸ ™iæ@ˆØ//ÏK”ÌÎ_Å4k"W8œ§šØ]Mƒ¥(”Şâ«yYÑä/ãµı	ƒ’W4€›™'f……q» É˜8mÉ
+ûŸ4_ĞÃ<YÇÑÔ;QŒš¯s † i;+ Œ¹«HßÅÎNq"¤SÇÎWütÀ¹Æ!OÿmŒ%‰@¦GèAtLC’uûpdp}´‰—¦ã([[(ª> äZN&´|ÄìµD²›¼!0‚½úEİ\nd S¾Ë`vÍk6Anq'Í™»Æ ¤İ,¾êÒhWr4ê¢Ä]™°Oä¦aŸÂ‡5İ>XçÔT æB:ªŸ›ùOÇ4Ñcö!ŸäWJëŠ¯ÈXãÌ(Ş×¬b1»âá±gMêVëxÍ˜ıÑ
+œW‰íZ¾‰ƒYBİÎ|ÏLğÜ¤}UÙÁ8p²ÏçòÓQí€wÑY*\³…U_s+VÂØÕBö"j\¾`¶¿Ò4µ–lñÉêt× QûEÔ9 bbOÛr6^‘ÃnİÚ¸`VéTA®¶[µC¬¢
+4ùŞA:LÔk(çQ@Ânàr!Æ¾[Éß×Ú¹l€0Ucø v}¦(¢máURõ
++¡×ÔÎ…§©uìáá¡‰a{é¸$Qúºš09Ñuü{qä}ª_Ø†Ö`µ,'ª…ssĞıåÄ*;;a%¤}ŠÌ¨`U¹ÕGñî?æâ›²ÑÖCK‹)®wZØÂäŒS‘æÉÀm‘:78k²İ§ö›Èo´â–ç]’ĞE&©éïG	…ÿª(‘·ç£6!«âŒ_1Gô ÖìÃª<Hˆ€éXÈÚ-p>áÍBb
+IoåëIjÉé¾¦+Xç&GQj.	r…íÃCˆå*+väNÂC6ÛUìğ¸3Àœ†ÇXI=•âIH(ÿó—æÑT”¢w0ÒÕhÈø	[~GôzX±ûVïû+OY*öU)~¤ûÖ,VL®‚›jÆ:§Ÿ(DkDšƒüóM¤/Kİ¤˜tSŞÏš!–§)†lm™2·5'219Ü2™å´Ö	òğŠÌúñW•j½ÜÈÁêšóÄ­²eímÇÚ¼7(,Õ;¸}}^9P-³£?¡¶í^{Y>uœ©î8lR¼+šñùë¼yŸe¹mêÏûEò Dòç™%TÆJ¢•¤²,o‡} =Ë½}›TR´Öx«kŸ½¹úĞ"gs××DfïCÍ8‹—ûüjŞğ!@Ÿ:£
+³-EÚ"„w›?	ğKK¬ßÚO
+ÉÌ}#´ÃM¾~QR¡´ˆšÚa×§˜qCü, ™ÿM®Òx‚é’B¦á] SOU‡ßôëå”T•»êÅèÏÙŒnaÑe°inv )ûìáˆÀOaînV/§‰‰újjÇÍøµ €ĞÙ¢ç:†rt0>Á.fA  c   >  D  +‚  !5  ã    $  t  !’  (n  J  '¿  '(     $     -:  5  #Ë  è  )¾  "  )ß  ¼  +-  J    *Œ  'İ  e  *¥   Á  å  (%  ,  ¦  $°  %O  Â  5  #F  +õ  †  "V  ,?  ¹  —  %¡  "ä    >  9  ,¾  r  ,ä  &’  ÷  -Œ  )  ¾  <  -  ğ  )”   ®  õ  Ö  í     'ƒ  À  ß  $H  N   }  ²  B  #{™ã	¹’ÜúÉ‹\1­ò{®¯Ğ™³İ
+ˆ(æÉV½&1 ² .
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\pack\pack-7b99e3090fb992dcfac98b5c3111adf27baeaf1e.pack === 
+PACK      O‘xœ‹ÁÂ0 ÿ™Â$ä4ub$„`˜À‰T¢	*ù)+ğ¼Ó]_Ì€(DÜyÃ„ÙgBöêmÈ;I8†œr(eŒî)‹Õ6bL*BWe5²˜i(CaJ!Å«:y÷{[à,óÔá2ÕÛöËÔÇÛ,Óc[Ú| Ÿ˜	)2Ã) [íZuûçu'USø¼JSƒÒjµÒ§VáÇîrhHô–xœ‹[
+Â0 ÿsŠı$›&İDô
+õ›ì¦-ô!%Şßz?g˜i‡*Ääçê]ä£óUœ`íPl ˆ)SÏ®tæÍ‡n\O5UTu(]_‹Å\JTÍ¸`ÒB0üiÓ~ÀÀëÜà5oã·ã¢Ëc\y^®e_ï€)XO”àbCgÍiÏªé?¯yŠ¨À ,«B5_Ú|E#–xœ‹AÂ  ï¼bï&†RXlbŒ=zÕ »´°†Òƒ¿·~ÁãLfZe2ZE”A)t&xFéÑGR½öf@±;«…ÛÚ¼T¸»’<Òkšá\@œ¯Sq)ÃR.ĞÙ“ÕRá M/Ån÷ªñ?¯‰`¼w+ø-e‚õ³6.ğ®Ë“C_àÑ=Ğ0xœ    ½Çxœ…XÛn9}×WØZµŒ½<åM‘/QbO”ÈÙY`±Ø¡º)‰k6ÙK²-k ‡ù…Åşá|É*²[-'ÀúÁ²x©Ë©ªSE¿³E1w{çŸF£ñø¡5Q³­²Q—Ø³tˆÒF±q^Ä7ØòJ¬®ïçã±£ñÒí•W•XÄ—½²Â5ÊÁµ¾Tâşş!LÄ½´Û;/›İDH[‰¹WûÙb<õª…BŠñ¸fõ’Ô‹pQÕPQ© ·
+¢’ÍÁÒ³2Ğãq­ô.àÃÑìdPA¸Û¹r›¸—°ô:®Iè½Ş(1?”F‰òàr*Q4Ş=k¨AÉÚ¨ £ç®ÑÆÅÂè'%Ô”ieá’¶gÅ_W8Orha£2FœˆıNC´F/·ÚnÙ«€?°ÊàÔ¸cà¡I6'_5xYFíl˜ŠGXŸ¼-94ËZÕÎpıâŞÈZ.l¥^ÄÄ—Ê#B—WQj+J‰/1á­#@ñåN…è%é ¸×­6QìuÜA~ ˆ†ea\Ñë2â„³*Å¥ AW0Ü¸Ğ8£ËÃ·BëÉç+awÅº[[:ïÛ&Ò÷œK¥šFïY?”Av!*kq§ã‡vİaáğ…À<p¾¥OÄYŞ¨giZIò[ò¾Îîf+Ü­YØÒÕ@’İ•bÓù5¢¹«¥¢K¡ÕQ‘5”
+Š-…Üy0·(ŠÑèÍñ(×%RlNÛ°%şşIÄ­’±õ*üãâÍ“:›üõ’ög@
+JZŸáÏ³V{”ƒõÂåu¾Áî.É]ñ ›6âx¨L™`/ê´ÈgU¹³Î¸-PŠ²|ÂÉØ/–øÜÒ»Aù–Uâ`“Öp*¯ñÉ;#ÁqÈâÜ6­4ZáSß2{-}òÊMŠ¥Ø[ñ~ 0N©~¯(†ØóEBÓëuÓÙrğ•÷ïu‰ô"e&ıuy
+É|ŠÆ‹‰ÏÃÄGRüşÛÅJ¿€B*]rÚ” #Ô»’ååÔ ¦ S‰"íÏ2¯tÎWÚò=ğ]_7SÖ»J…Òïº²UVøyÉšPi’Y!ˆwµøĞn‰9ne©.{šˆ2<…A‰•d$Â–‡œŞ`EFÍ™dKÇáeK0&_30o0,P¸³ä	Oô"‘'0§’Q®eQÙb›B2ß8 Ä™ËØ”\Í¿ÿöŸ¥¤r‹ëæÌíYT~Â—g¢ZØG6ö~<ÎL‹SdÌxÜ±-¨ß„( –(±İˆ‚Œ¡ŠoŒb3ÄEµßş
+zE1—|{¾“™„7€õZJ(i„Aˆ[ä÷£ùÎ-‘ˆ,K HÄ±!âO¬=Ág½v&$úÍ%Ö¡Ä|hkiˆ¦_èVø}ï\“‘˜5DCPÎ:‰=%ĞCÒ’Úì—šn§”•hDˆ·JxNÜqêx—)L‰Pò^1ŸÊ4+d2fs~D‹„¤ä´›-p(S¯Ü¢Ñ ëÎñöãSáäD ÈP4\xKºA'E–JÓ9[äÌ$çcêIÛ†ê¿` jIP:¢FÑRÜ/€/4^?K²Ù¸¶ºd¡ÖqÎ¢+Ëg”!ëK¥g‘Rôh4èÅè5„„#Ñ 6I? 3ò€ºz7ıq
+'Ï=´ë(.yf¬n‘UAl[xá¶G/Ä¢Wÿn!ƒ‹fI	×Ø3ĞÕ¤kÑ!á‹¨„F•zƒ‚O…zQe›’ ÜáÆ±£¼KâÎóHüiÚÑFguÔz“‰6‡dI ÂNÒ.ş•Ú<‰èsó«ÂHEø«Ÿ‘¾K™übŠ¤…´{Ş»æyoÒÍmùÆ‚ª™ÎçW±œbz»aC`\¤ù­RM³bP‘AâÍÌÆÈµËaAgÔ%|ş3ù|ëZ[ÂÕùK)‹Üß‰™ÈC\ØIšu)ói!<×]””Í[Pµæó{3hÓ“Ğ“ß‰Œq|Ë8»%fP˜‰X—ˆ¼ğ4ÒP'%Å¯ˆ…Ê¾ÔÌœ9èš®2aœ˜½!,EvÜØ:duµ§XuD&R'Â°œ‰@Fá[ké€fş„lH‘şBÈ¾"úïá=qûÛsfoL‹.ÈW·–;ušŞ¨Ö©¹Šg-iFM!ùY­WëñêÃãã’À‰Aï½]vC¾N­bĞÀ h “nP¬yh>™=M4 ÒÃçÄi„æ´»•!Î– åAİœINl9!†ƒŞ q*§†—ô·Z­í4wüôı@Hï§W(1Õ3†zA´9ˆ5"úT¹½MoŸµĞPÀÃN) ß4öpQQõå9üvÌù	‡Y*õ#Ï`_»ÙI´)˜r‹ôs<ûüñê7¨YÈ™p¿øÓÂ?É¬_°xâ•‰ÈÄó¤‡yßµnÆ6ÈŒªåF’GŞJtä™R˜ãPáÓÓÍT$Ë5%£Ò³´·§nödF¸Ü¥¦| bmZ6gkKôÄÕçûÅ55/[jd%e$¢‚{ßîE¥%2±çT˜¬Ñgk½U×§‡ò‘§$Ìšg ´Yäô·ÑYW»–º¦bZÏ¤‚óiª½…¹~³fÜkF¦ÁtPaéß,Èâ‘¦C»M†Çô¥·˜6ÅEñ«duáGº|Eû?İ1¥€I%&::Èº"0·Wóˆ…“W_Z5moÉõ0¾9¢Ã¥AxJ1‰¦4#›–9…¨äq+Pá<i|àİëÅ¶%™œÇ¼{İèg´.ŸºïÃè}nÂÑ¸&®ó4uBÓ§v­¼U4:€¼ô&3_\Í‘TºQDxXpkâ'ÉJá¡ÅöŒÆ«SHgÒ9‡”h9iÚ*5=úÏñÇy
+æ™LH|AûH"ØLsÍ°²¦ãÁCúÕ£•ØeNã•¥ä8Ü?ñÈwÜ‘ ä&;©ÓÃŠ¢ÿó´JW_?§7]>‘8·Ò<”×û‡Õñ‡]ü"?—®ßwªò“’†ou=ãbyˆ;g»cÔ3oú7Ÿìş×tñxhÔ
+¯€&^Núÿ:‰‹O."Â€eî||µïŠ°Œúâ¤k—WŸÎ×2ß;{€`éÉ€[©!õÿLÉFÚ—=òù”g¹ˆP8i`-¬‚ˆjÃĞİ`úÇÿ`!Ñ³¸xœ½VQoÛ6~Ï¯¸C%©ü./Š`yØ4ØSQ Œt¶‰I¤Ç£ã‰şû)Ñ¶–m±'[äñ»ï¾»ãq>2Õ¼j$*;òFï´ùûÆ–.d»ÑÆÂ3Üh¥°²R+è`itY1¯†Ål1šşDb…‰İÆh«+İŒVïA<Q¥kVı[\à7o"•E³²ïvÓ sÃ,,~c' KÙà°ëÈ©V^«Ü¾²K[CÚÜi’ d~TX‚Ú¶hP­…»ŠKĞ¹cP«-G‘BÑ¾}Ô]Çµ/_İjÑáj÷jŸ‘6Zú0\<©ÃñÚñ$+Œ=0 ªÏ²tÁäªFÁ§Û4ëÔÆÈ'aÆ—I,‹GAø—iÒcW°!çÖ§ˆM·•Õ&'4Oh’ã3ïEYK*4ŸìãîHî~#îlò@¡U¨Ñ<o‰^}ìMÖBÕş©­\ÊJx(·ïQ:G^Ğ^U1°|VÂ×®$üíIËúc$oöáØ	iOü ‹`–x½X!Œ›}g;©j½+h­w·j©Më	Æ@²O·ú4™b «ƒvYpÕÇU­!Gc´™<O}üî"úÃ)º~)¸kø ¿>{¼î!‰ÈèøÕàùPÃÚ±!òªïëò´Õ'è…»i¢ğr	ù/‡RÎ&2eOódĞnútw×güg‹dó¬Xd—xÿ ¸c`AÑrBĞÀĞÅ;)¨#y³6¢¶ıoì,Ï•|ÕÜÖÃu•Ü/ü5}3cÚ6–‹ùU™9ëùö1]è…èÑJá3Àî_Ñş­b›M³g¾¹)?K—îv;%µÿò5üQë…ú	ŠŸ!qJÒK‰OE¯¡ï¾8œ×ÁÁ›åæÄô…qo…İRzí² ÿkó“gàÔëŞèù€ù<NÁ²î²¯£î}uÄsİQĞqˆN¤2>²X7zx·hÑ®5‘«+Èøíµâ&¡ìµœM”‡»pĞeËnø1ÑÒu:^^ Ë†v€Ü$á«îKæŞO¬(ÓYÎ£jµ¤d8'Êg55<}#¤O–€,i˜ª:tn@İrñîİ‰Û”»ûæ=ÖÁ¼ÅxœVMÛ6½ï¯˜\b9qä]¹8ñE -m-Ğ3Wš]+•H•¤í¸Yÿ÷)’&%:)r±%q>ŞÌ›Îr	JVËªmëe%8ÇJ7‚—Z]4]/¤†¯ğQ
+-*Ñ.à*Åp/E³rÙ»³Ùë‹übª–)¿[ğõ —Íi„½ZÁßxw+ªPÃ#ğmÛÂÚş½Ä¶²]Ò²áñg‰â¯Zc×kEª—±@Ç¾|ÊÈ\]f­¼Å–ìñe"°A&õ2ı;×(wŒ°Üˆÿ¸-ÿj:Ûï ï‘×úş»Ee}sÜÃÖ¿¢Y@Ñ©‡•ÏäÖ×°M}]Ì“8†ã÷Œ×-Êy­ù™ ØÈÕ¶ÒBQç– ½iTIßI…~Ï£Ó2)æ+Cw×(|ca9-‰z+¹Å…D%Ú.èğ3©ZPƒ4y‘‡ğì|î}2ı…ÇbCODKÁ¥’4ŠÄn9[	‰”ÒDä{Ïf1üøã1‡ÃQa àºÄâ±ÇËãd8,k¦Y6œª
+ÏÇ£´èÏ Mãı!^”RH‹Ö<XoAîƒ×9BÅtµ	r'Hyqûœ‡Š	Í’dÁÄJne‹ÔY¶u	TÆ„ÍO”²F…²amóß êÜ5÷¶MJ}è)gë5Ìˆ­à>5FJSüò`z bB·Éubù@ç}LÆÓŠãwŸŒô˜Ê±Ñ[Ô8¶ërØåÆ‰ÕM{úä0s¹>ú|+ríüê¨}Ğ3É:š¬Œ¢¦·Ÿí_ú‰oÛÇÇP^Y}¸Õ†÷'DKhåòÏïn25d¾3uTÌ¢¦½gó(¿Ä4…gª¦"Ódø$‹Y¾T(Ä¾¦Fib÷G¥kI8©€§/Ç’ï‡L§‡m«O•’Âİ„¼.B¤§î0áKâÔ„FúFèæ¾¡f¦Ôş 2¢vüI†c–¾ÃMÓˆ ÿ¯Sp?`6áJÌßˆI™Ö"¬ÎÄd’o‹©©Éb@Ö¨¤ü[‘÷a°š#³-Wš6
+rÜõ+xK J.ödÅ×Åq/i9¹œİÑ…1á67š™-àg¤“âÌï×ŸhNM¶¬sà¦Wøµİ¹-.-½¼çÏ‡S¢Ä-j9F¬Ò^€Nd|ËHO†ñ­tzSöDÖUùj,zWQ×Ê§äüb–º"º*]/®”½‘¤¥£Ï˜<orkïNrÃÓûÃø%ëÉ”>~U‘å°;xœµ“ÁN„0†ï<Eo	YîìÁ‹4q5š}€Zf×&ĞâÌˆ+ïntV‰ñàöûÿ™È2A¨2Uj0œÕhÙ*[®™"x¯-²Ğ†÷R¸"y qŒ„ĞE.ˆQ›ÃÆUÜÖ‹Â[Ä+ñéŸ©¶† /Œe½×J²¶få/TÀ¯¶¸š2j‰²"÷JšÖ×Ğ”|®Ñ¢+BÙÂ©™¦zÜ8Tï* D·‰º(˜W¥$cW½sbgC	Ô²ÔWtÈCoÉ	ãzÜ wÏÛõğAï[#ñ–œÎ‰WÀ™XH–”ä³¹Í‘®gã)Éğ4L4æ˜é8¬~6KÇ>#…mÍvÒ¶Úín¯ã$½Œ+ãX?ÂŸÍ‘ÆzâdˆéW'Ñq/ÂÕ%µŸ÷Ljš{z™û_Åûu
+Ût¢‰nÉÎv²ÂÿÇì'YÊ¤û!ë;•«#xœ340031QĞKÍ+ÓK­HÌ-ÈIex6÷ÑìM¯9{wk®+ºqèIOğDC¨ºôÌ’Ìô¼ü"¼ª|<]ı‚]ñ)ñMÌNMËÄoY«£‹¯«^n
+ÃkÏ¬“/ë÷-Óx®æ˜¥ÇYÔÊU”’ŸœZ¤›œŸ[_œªW™›ƒÕH  ).f˜Òµƒafæ3‡^áúÂ¢úç…½!Ò©)™%ù@³r2SóJŠJäÄfÙ%kûí{Œ¬Ş/Åú¿¡
+ËsJK2óóêâœ:—ŸóHØµêQĞ¼ùêiW´¶ÿ‚(ÊÌK+J,.)*M.)†×|“ø‡m"_ä˜wÅ:°gÖúâmP?Tåg¥&—è•äãp?TeQjaifQj.È}z%%xüZœ\”Y ôEÏ±›çÒ?ñÇéÌ=ıJå°æñ7P©Ee©EËkDGk¬²Sà{%ã§&²¥æÈ¨uÅ©%¥z•X­ \·ó(ªxœ31 …Ä‚L†g'äN´2·È–İtwù·Ù'ò·<šf‘-JÎÈ,IM.)-Je¸çhås%[ãy Ã¡¼E‚ŠÇöEŸ„(KI-KÍÉ/ÈMÍ+aø}M'Ìg]Óì¬cVËçk0ºd»Ìj†¨JO-)ÉÌK×-.I,*IMa0çjW¶øğV›ëÓœûö%tf>‚¨,-N-ÒM/ÍLIexzDËÚ:QuIm×™	¡;¯º|g ğúMo¯xœ340031Q((Ê/ÉOÎÏÑ-.HMÖËMax6÷ÑìM¯9{wk®+ºqèIOğDCˆÚ¢ÔâİÄ‚LÊÊS“Šó“³Sñª mg8 ¥xœ31 …Ä”"†>‹¸„¦ õİñ×ÖñøfKò„>340031QHLOÍ+‰Ï/JÎH-.)J,ÉÌÏÓËMax6÷ÑìM¯9{wk®+ºqèIOğD¨ÜÔÜü¢ÊøâÊâ’Ô\j‹S“K‹2K*	)›ŸtEfIjrIiQ*. ÁÂ]'¯xœ340031Q000Ô--NÕ-,OÍÓÍÉÉÕËMax6÷ÑìM¯9{wk®+ºqèIOğDC˜r#İœÄ¼ôô¢Ä‚İü¢äŒÔâ’¢Ä’Ìü<‚:u“‹RË3uÓSóJŠ	ª7ÑÍMÍÍ/ªÔMZ“Y’š\RZ”ŠK Ô¦WW¨
+xœ340031QHÎÏ+)ÊL*-ÉÌK×ËMax6÷ÑìM¯9{wk®+ºqèIOğDCˆÒÔ²ÄœÒÄ’Ìü<
+‹RsR‹SuŠò“S‹‹	¨.I-Æg9 )K´¥
+xœ340031QrutñuÕËMax6÷ÑìM¯9{wk®+ºqèIOğDCˆ¢äü¼´ÌôÒ¢Ä’Ìü<j3óŠKsrˆQZXš™œT]T‚K! ÇGIÜ¬xœ340031QHÎH,ÑÍÌ+I-JKLNÕËMax6÷ÑìM¯9{wk®+ºqèIOğDC¨âüÜ‚œÔ’Ìü<İ´ÔÄ’Ò¢Ôb:@&çädféä”¦gæP]VœœŸ’ª›ZQ’šW´—r äSB¯xœ31 …Ì¼’ÔœœÌ,İ‚œÒôÌ<·]†¹â÷9Ód§?æ½î{9jİ×k&`•Å‰E©)ºEù%ùÉù9üsYÿÿXùê½@ÓvïÀC/J#Ô *ËŠ“óSRuS+JRóŠ3óóÓ¬æŠ<l¶v©]½…ëë$Û6ç>*2ô©xœ340031QH*ÍÌIÑK/JLÉIÕË.)fx6÷ÑìM¯9{wk®+ºqèIOğDCˆÚâÔ’’Ì¼ôbBÊM€@¡¸(™![é¾’õÙşû·<W,X~yO—Şƒ] L5»¯xœ31 …ÜÄÌ<†3÷®¯I2ÜıˆñáFötIßWa¯+ ¸ßI¥xœ31 …ìü’œÌ<†»·vğ%„½q\·-Zd«óšE\&?MÀ
+ŠR‹óK‹’S‹f×ËÏTOkm-Ü½à¤ø‹Ü“\¿™£§¹®xœ31 …äü\†¦»«jÂ¸·Ü²Ùsú‡Zõq ¡õ£xœ31 …ÄÌäüòü¢l†œëÒÍS8>Ä>I-Ü(oÆgîUô ×a£xœ31 …Ì¼’ÔœœÌ,†}^]Ê/2yµèHìÌÜşO–%Î ô‹¹¥xœ340031QpôtÎ/Ï/ÊÈ)MÏÌÓË.ax6÷ÑìM¯9{wk®+ºqèIOğD PHL.ÉÌÏ+f¼ù|‚¢|ÀAùeny¯ªÆı/‚¨HÎH,aà(9*–°}gõ‰Bï…MÜŠK-÷B¥s2SóJ–¹Ë¼p,õqnœTú» ¥ vKçt¨‚üÜ‚œT-Cƒ¾2ri/œ{ıÊ¹Öå+J¹ß<„)ÊKËLgø°CÌøÀœ¶ãÜ¶Syzhü ÜiVn­xœ340031QpL.ÉÌÏóHÌKÉI-*ÖË.ax6÷ÑìM¯9{wk®+ºqèIOğD ÷ô¢xœ340031QpÎH,	HÌKÍÑË.ax6÷ÑìM¯9{wk®+ºqèIOğDC„ºüüœğÌ¼”ürŠ}S‹‹ÓS=óRrR‹p) ü†9¶¤xœ340031QpôtÎ/Ï/ÊvÎÉLÍ+ÑË.ax6÷ÑìM¯9{wk®+ºqèIOğDCˆbçü¼¼Ôä’Ìü<ßÄ¼ÄôÔ"êŠòKò“ósp) O:¨ 	xœ340031QpÎÏ-ÈI-ÉÌÏ(Ê/ËLI-ÒË.ax6÷ÑìM¯9{wk®+ºqèIOğDC˜†¼’ÔŠçüœœÔä’|BÊİ3ò‹KB€‚Ró€†ã6 8!?ÿ­xœ340031QÈ)MÏÌN-)ÉÌK/ÖË.ax6÷ÑìM¯9{wk®+ºqèIOğD ˆq%£xœ31 _×G]O?7†/U‡½ÿÍ&§í©õ-T³n	3 ÌÂ²¦xœ340031Q(È)MÏÌÓ«ÈÍax6÷ÑìM¯9{wk®+ºqèIOğD æf«xœ340031QÈM-.NLO-Ö+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²‚¢ü’üäü½âäŒÔÜD½¬âü<|êKK2spš	 Âš7¶§xœ340031QĞ++NÎOIÍLÏË/Jex6÷ÑìM¯9{wk®+ºqèIOğDCˆÂ‚ÄäìÄôT½¬âü<¬êL€@¡¸(™áå„ˆ·¸uìuJâò”Î|
+‘-I-.aø<ıÙÅ)‹ØÊ.]qâgt;Ô’ còÒ2ÓqÛ øOú¡xœ31 …äŒÄ†Î-îW2×ˆ½k²´¶-ß.vû®¶	D:'35¯„ár äÛ†ò‹¼‘Z1›[Cã‹µÃİ€*ÈÏÍMÌK)fÜ2uú‡k÷x×kÎjb^+{\f1\IANjIf~Ã’àãçÂÿ”ØyŒWÑÿ¿lnj§LQ^Zf:ƒ¾ºÏ¯n•¡;®7®dÚâ³ÄçñdC3…ÔŠ’Ô¼b )z%ÅÏæ>š½éâ5gïnÍuåQ7=é	1¨´$3§˜1vVKøã–OáJ—Ÿô÷FÓ 4
+cõ®	xœ340031QHÎH,	ËL-(Ê/ËLI-Ò+)fx6÷ÑìM¯9{wk®+ºqèIOğDCˆò‚Ä¼Ô½äb"e”äæV•…İ$ 8sG­xœ340031QHÌtÎ/Ï/ÊvÎÉLÍ+Ñ+)f8ÔnÊ×.âù•…gNV«çÏşéoQœœŸ——š\’™ŸR¸OütBÙÙl3Ç¼Bõ³3wSXrWª° (¿$?9?¤Œá£¤]úÿ§|fİéÊq»? £k1Ù¦xœ340031QÈHÌKÉI-*Ö+)fx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²¢ÔôÌâ’Ô"çüÜ\ œÊ&Á©xœ340031QHÎÏ-ÈI-ÉÌÏ(Ê/ËLI-Ò+)fx6÷ÑìM¯9{wk®+ºqèIOğDC˜†¼’ÔŠ’øâ”§gä—ÄƒtàR Ê²=â§xœ340031Q(N-)ÉÌK/Ö+)fx6÷ÑìM¯9{wk®+ºqèIOğD /%Ş®xœ340031QHËÌI/-ÉÌ)Ö+)fx6÷ÑìM¯9{wk®+ºqèIOğDCˆÂœüôôÔ"\Š 
+°#‰«xœ340031QHÎÏ-ÈI-ÉÌÏÓ+I-.Ñ+)fx6÷ÑìM¯9{wk®+ºqèIOğDCˆêÔŠ’Ô¼bBŠÅ|(Ì¬xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğD PHJÍKÎÈM,Ê.fàKŸ¸çÑºìş‹ÿN›¼kG?DQQbzb1ƒ¬˜ş«”_×ê9â-«>ëä·ëzûM ¦À/›¡xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²ÄÌäüòü¢ìø¤Ô¼äŒÜÄ¢l’ós‹2‹óó*,ÈÌÉ/!l0 ŸtO‘§xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²”Ä’ÄâÔªRËsJKò‹¨ËM-)ÊL.Æ¥ÊÄ ŠRò‹JR‹ŠüúVœ»Ó~e³¡ö»ÏFD·ÿ*;¬ 5©89¿(59±(—Y iiQ¨xœ340031QÈ(ÉÍ‰/J-È/*I-Ò+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆÚ¬âü<‚jl¾'ğ¬xœ31 …”üäìÔ"†­.›XgïQ4hÚûË•÷nL^
+·B°	XAviRjQ^jIj1Ã”3çâšd+…[ÌY>ëF¬o3ûRˆ¢Üü¼Ì’ü¢Ì¼t†?ó>û.Ñó¾»„oFIğ½ó³'@¦%æ•0~øBËm»°íÁ%×¥Ns±Ÿğ‹ İ8¤xœ340031QĞKÍ+cx6÷ÑìM¯9{wk®+ºqèIOğDCˆ¼K~rvjQZfNª^^zf^‘jSŠóJˆT\œZT–Z„Oq
+X±nr~nA~qª^enVÕ r+^ı¥
+xœ340031QHÎÏKËLÏM,Ğ«LÌÍax6÷ÑìM¯9{wk®+ºqèIOğDCˆÊ”Ô‚œüÊÜÔ¼‚J3óÒ‹R‹‹	ª+N-*ËLNÅ­ @†JÂ¥xœ31 …‚¢üÜÔ’ŒÔÒb—kEÙo$jÜPpİ×,ĞÑûÂÁd/ T‚ªxœ340031Q((ÊÏM-ÉH--Ö«ÌÍax6÷ÑìM¯9{wk®+ºqèIOğD ^Q$ xœ31 …äü¼´Ìt†·‡…Y;Ÿji—=ñ;älv;ô˜	XAf^f	ƒøO¾W{M“d..XÔ{Æ|ı×o+x6  ï½O®xœ340031Q(L)JÌ+‰OÎÏKËL×«LÌÍax6÷ÑìM¯9{wk®+ºqèIOğD ›»˜¤xœ340031Q(N-)-Ğ+Î`x6÷ÑìM¯9{wk®+ºqèIOğD /’¡xœ340031QH*ÍÌI‰O­(IÍ+ÎÌÏ+Ö+Î`x6÷ÑìM¯9{wk®+ºqèIOğD PHI-cèU‰}ôËVĞóæÕ‡Ï&|c]ÜÔo1,%¿</'?1%>7?%5§X¯ «YPÕ‰ÉÙ‰é©ËqÙU_Tš_’Z\‚ÓPuÅ©©@¤ææUpAqjIi.Ó #‚ £xœ340031Q(.I,*‰/N-*K-Ò+Î`x6÷ÑìM¯9{wk®+ºqèIOğDCˆÒòÄ’äŒøÌ¼’ÔœœÌ,¢—'ç§¤âR
+ |Î;£xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğD PH,Èd8WÓ{ŞçÃ%µ"¡7Zlª?ÿüD69¿(•áùb3ÅÕzâİ¿0\{sx•GGTº(µ¼˜AÖBÑRÏ’“+UWk	×î¦Y‰eIù´üÒ¼”Ä’Ìü<†Ø[sÂß\Ûèp/Ë.à–’f×fµ+†‡æ&fæáwd~QrFjqIQbI~C˜0OáÓyU;*İZÜµø°•#DY	PM1¦sº/ÿ®ÃEœ³,é6Ö3‹ ¯o¿¡	xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğD PÈÍLIÉI-O,JeĞ©-`‹›ÏÓ¼‚Ÿ—m…Ú'y«Cg!ŠŠòKKR‹
+LW›şº?#¿d;/Óú.±:¡pˆ‚òÔ¤âüäìÔ†ÖmÂóZîO;?Ñ+añ—G?VÊ¨ÎX F‹;¥
+xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²Üü”ÔœøÜÄ¼ÄôÔ"jËSóâ“s2SóJ¨,ÉÏNÍË¬Âm" 0‡J¨æ[xœ[Êx˜q‚[r~^ZfúD~yN «$13/µÈáJ­HN-(ÉÌÏ+òØsòÓÓ3ó€ª$ { ã<xœ;Ì˜;A%±´$c"¿"SQñD~	 A­äŒ(xœÛÈØË4AŸ½  (¿,1g¢ƒsFbÉDe¶œÔ’Ìü¼‰ò\©@‰ÒD(-#51§$ÄÊMÍÍ/ªœè  1@Ø¤xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²ŒÄ¼”œÔ¢bÊróÓS‹p© ^€4§¬xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²¤ÄâÔøä¢Ôr\êL€@!%µ '¿275¯¬˜ááÂÎÄê—;Tíše`y±ôOu!LeqfzAUùÉ¥ ÓK2ó	*ÎÌ-ÈIESí5ÓNò}¿öÅ½Sƒ›µo<Qôø- Q]”ZXšY”JŒ[KR‹K2óÒq+ =Å8¬xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²”ÔäÌâÌü¼øÜÔÜü¢JªSs“RSR2óÒ‹	(*I-.! ¨(µ¤(3µ,µˆ€ºâäŒÔÜDBV–¥&—äÅ‰T\J S€ğázxœ›Ã4™q‚[bzj^IñD~y–ä¢Ôr ÍZ’Xœ  µ÷
+æ*xœ›Ì¸‡qBg~nANjIf~ŞD~ù‰Á \Ûù«
+xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğD PH-KÌ)M,ÉÌÏcÈSk-şŠƒë˜¼jïK÷Í¶Y_çL…(ÊÉÉeĞWÜ´jß½ÿ%<Š~÷½Üù"D6757¿¨’á:{àoW–+–IIş·‹Ìâ&Îƒ((ÉÏÏ)f(_g—ÿŠÃöŞô	:§f-^0O lE†nzxœ{ÎX:AobüD_ö‰Ç,j¥£xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğDCˆ²´ÌœÔøòÄ’äŒÔ"JÓÆåP•“™WBĞ¨ÜÔÜü¢ÊøâÔÄ¢äj‹Ròã‹RSš
+VY^”IØşâÊÜ¤üâì/I-.‰/*ÍËÃm* à¨Kì€xœûÌ4‘i‚GbAAQ~YbÎÄò,éE‰7(ğd$§Æ¥¦g—UNÜ¨Àš_Z’ZTÂZ\’X’
+dp—¤•eç…% |*_¬xœ340031QˆÏÌË,‰×+¨dx6÷ÑìM¯9{wk®+ºqèIOğD PÈÌ+IM/J,ÉÌÏc˜rïÑêÊÈ‹Oô‹mıËÙ<I(Ü¤¢ªhÃ‚Lkyyim…«…=î=çW¨Ä ˜J,N¯xœ340031Q(I-.‰O,ÈÔ+¨dx6÷ÑìM¯9{wk®+ºqèIOğDC$e©e‰9¥‰%™ùyÄ¨ÎMÍÍ/ªÄ¥ ±Ñ9³§xœ340031Q(I-.‰O.J-/Ö+¨dx6÷ÑìM¯9{wk®+ºqèIOğDC$…iù¥y)‰%™ùyÄ¨Î/JÎ ÒE‰%ùE¸Ô y=#á°TxœÛÍ²›eƒ£Èq“	“¿É+Îîõºkı	¹ˆÇr›¹òçÌé§Yxœ«¯Ÿ-rvÆß‹\sÂ;ßFíëìm`Œtº ¡òöî/xœÛÎ¸qB´Èıë·vòä4ô…&ÿXPV»L£oQîÄ| Ü×eîOxœûÈø‘q‚ˆİE¥ĞõbU^FZÚ_™}šÏ¦Y^™è° µÛT­xœ340031QHÌtÎ/Ï/ÊvÎÉLÍ+Ñ+)fx6÷ÑìM¯9{wk®+ºqèIOğDCˆâäü¼¼Ôä’Ìü<
+ŠòKò“ósp) ü8…m€|xœÛÍ²›eÂ²‰ÒV1 )­Ï{™ã	¹’ÜúÉ‹\1­ò{®¯.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\objects\pack\pack-7b99e3090fb992dcfac98b5c3111adf27baeaf1e.rev === 
+RIDX         E   A      C   H   4   2          (   D   =   '   M      B            6   <   !      3         /   ?   J   +   L         G   $   9      .         K          	      ,   1   )   N         I      %   &   0   8      F         "   
+   ;   @                     *   -   #   5   7   >      :{™ã	¹’ÜúÉ‹\1­ò{®¯²òašîgMVËSfÄ%ü.Xé˜.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\refs\heads\main === 
+2072ba97ddb2023d73c2327931508199e0980cf7
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\.git\refs\remotes\origin\main === 
+2072ba97ddb2023d73c2327931508199e0980cf7
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\api\protocol-spec.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\api\rest-api.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\api\websocket-api.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\agent_orchestration.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\memory_system.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\security.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\system_architecture.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\adr\001-use-qwen-llm.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\adr\002-langgraph-orchestration.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\adr\003-crewai-agents.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\architecture\adr\004-memory-architecture.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\development\contributing.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\development\evaluation.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\development\release-process.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\development\testing.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\getting-started\configuration.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\getting-started\installation.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\getting-started\quickstart.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\getting-started\README.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\user-guide\chat-interface.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\user-guide\completion-features.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\user-guide\intellij-plugin.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\docs\user-guide\vscode-extension.md === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\build.gradle.kts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\settings.gradle.kts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\AICoworkPlugin.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\actions\ActionHandlers.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\chat\ChatPanel.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\chat\ChatToolWindow.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\chat\MessageHandler.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\client\AICoworkClient.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\client\ConnectionManager.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\client\Protocol.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\completion\CompletionProvider.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\completion\ContextCollector.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\completion\GhostTextRenderer.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\kotlin\com\aicowork\intellij\config\PluginSettings.kt === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\intellij-plugin\src\main\resources\META-INF\plugin.xml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\shared-protocol\messages.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\shared-protocol\protocol.schema.json === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\shared-protocol\utils.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\.vscodeignore === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\package.json === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\tsconfig.json === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\extension.ts === 
+import * as vscode from 'vscode';
+import { AICoworkClient } from './client/aiCoworkClient';
+import { CompletionProvider } from './completion/completionProvider';
+import { registerCommands } from './commands/registerCommands';
+import { logger } from './utils/logger';
+
+let client: AICoworkClient | undefined;
+
+export async function activate(context: vscode.ExtensionContext) {
+    logger.info('AI-Cowork extension is now active!');
+
+    try {
+        // Initialize the AI Cowork client
+        client = new AICoworkClient({
+            serverUrl: vscode.workspace.getConfiguration('ai-cowork').get('serverUrl', 'http://localhost:3000'),
+            reconnectInterval: 3000,
+            maxReconnectAttempts: 5
+        });
+
+        // Connect to the backend server
+        await client.connect();
+        logger.info('Connected to AI Cowork backend server');
+
+        // Register the completion provider
+        const completionProvider = new CompletionProvider(client);
+        const completionDisposable = vscode.languages.registerInlineCompletionItemProvider(
+            { pattern: '**/*.{js,ts,jsx,tsx,py,java,cpp,c,h,go,rs}' },
+            completionProvider
+        );
+        context.subscriptions.push(completionDisposable);
+
+        // Register all commands
+        const commandsDisposable = registerCommands(context, client);
+        context.subscriptions.push(commandsDisposable);
+
+        // Show welcome message
+        vscode.window.showInformationMessage('AI-Cowork extension activated! ğŸ¤');
+
+        // Set up status bar item
+        const statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
+        statusBarItem.text = '$(sparkle) AI-Cowork';
+        statusBarItem.tooltip = 'AI Cowork is connected and ready';
+        statusBarItem.command = 'ai-cowork.openChat';
+        statusBarItem.show();
+        context.subscriptions.push(statusBarItem);
+
+    } catch (error) {
+        logger.error('Failed to activate AI-Cowork extension', error);
+        vscode.window.showErrorMessage(`AI-Cowork: Failed to connect to backend server: ${error}`);
+    }
+}
+
+export async function deactivate() {
+    logger.info('AI-Cowork extension is deactivating...');
+    
+    if (client) {
+        try {
+            await client.disconnect();
+            logger.info('Disconnected from AI Cowork backend server');
+        } catch (error) {
+            logger.error('Error during disconnection', error);
+        }
+    }
+}.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\chat\chatViewProvider.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\chat\panel.css === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\chat\panel.html === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\chat\panel.js === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\client\aiCoworkClient.ts === 
+// src/client/aiCoworkClient.ts
+import { Connection } from './connection';
+import { Message } from './protocol';
+import * as vscode from 'vscode';
+
+export interface CompletionContext {
+  filePath: string;
+  content: string;
+  cursorPosition: { line: number; character: number };
+  language: string;
+  symbols?: string[];
+  imports?: string[];
+}
+
+export interface CompletionResponse {
+  text: string;
+  range?: { start: { line: number; character: number }; end: { line: number; character: number } };
+}
+
+export class AICoworkClient {
+  private connection: Connection;
+  private baseUrl: string;
+  private connected = false;
+
+  constructor(serverUrl: string) {
+    this.baseUrl = serverUrl;
+    this.connection = new Connection(serverUrl);
+    this.connection.onMessage((msg) => this.handleNotification(msg));
+  }
+
+  async connect(): Promise<void> {
+    try {
+      await this.connection.connect();
+      this.connected = true;
+      vscode.window.showInformationMessage('AI-Cowork: Connected to server');
+    } catch (error) {
+      vscode.window.showErrorMessage(`AI-Cowork: Connection failed - ${error}`);
+      throw error;
+    }
+  }
+
+  async getCompletion(context: CompletionContext): Promise<CompletionResponse | null> {
+    if (!this.connected) await this.connect();
+    try {
+      return await this.connection.sendRequest('completion', context);
+    } catch (error) {
+      vscode.window.showErrorMessage(`Completion failed: ${error}`);
+      return null;
+    }
+  }
+
+  async sendChatMessage(message: string, conversationId?: string): Promise<string> {
+    if (!this.connected) await this.connect();
+    try {
+      const result = await this.connection.sendRequest('chat', { message, conversationId });
+      return result.response;
+    } catch (error) {
+      vscode.window.showErrorMessage(`Chat failed: ${error}`);
+      throw error;
+    }
+  }
+
+  async applyChanges(filePath: string, changes: any[]): Promise<boolean> {
+    if (!this.connected) await this.connect();
+    try {
+      await this.connection.sendRequest('applyChanges', { filePath, changes });
+      return true;
+    } catch (error) {
+      vscode.window.showErrorMessage(`Apply changes failed: ${error}`);
+      return false;
+    }
+  }
+
+  async getStatus(): Promise<any> {
+    if (!this.connected) await this.connect();
+    try {
+      return await this.connection.sendRequest('status', {});
+    } catch (error) {
+      return { connected: false, error: String(error) };
+    }
+  }
+
+  private handleNotification(msg: Message): void {
+    if (msg.method === 'progress') {
+      vscode.window.showInformationMessage(`Progress: ${msg.params?.message || ''}`);
+    } else if (msg.method === 'error') {
+      vscode.window.showErrorMessage(`Server error: ${msg.params?.message || ''}`);
+    }
+  }
+
+  disconnect(): void {
+    this.connection.disconnect();
+    this.connected = false;
+  }
+
+  isConnected(): boolean {
+    return this.connected && this.connection.isConnected();
+  }
+}.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\client\connection.ts === 
+// src/client/connection.ts
+import { Protocol, Message } from './protocol';
+
+export class Connection {
+  private ws: WebSocket | null = null;
+  private url: string;
+  private reconnectAttempts = 0;
+  private maxReconnectAttempts = 10;
+  private reconnectDelay = 1000;
+  private heartbeatInterval: NodeJS.Timeout | null = null;
+  private pendingRequests = new Map<string, (msg: Message) => void>();
+  private messageHandler: ((msg: Message) => void) | null = null;
+
+  constructor(url: string) {
+    this.url = url;
+  }
+
+  connect(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      try {
+        this.ws = new WebSocket(this.url);
+        this.ws.onopen = () => {
+          this.reconnectAttempts = 0;
+          this.startHeartbeat();
+          resolve();
+        };
+        this.ws.onmessage = (event) => this.handleMessage(event.data);
+        this.ws.onclose = () => {
+          this.stopHeartbeat();
+          this.reconnect();
+        };
+        this.ws.onerror = (error) => reject(error);
+      } catch (error) {
+        reject(error);
+      }
+    });
+  }
+
+  private handleMessage(data: string): void {
+    const msg = Protocol.deserialize(data);
+    if (msg.type === 'response' && msg.id) {
+      const handler = this.pendingRequests.get(msg.id);
+      if (handler) {
+        handler(msg);
+        this.pendingRequests.delete(msg.id);
+      }
+    } else if (this.messageHandler) {
+      this.messageHandler(msg);
+    }
+  }
+
+  sendRequest(method: string, params: any): Promise<any> {
+    return new Promise((resolve, reject) => {
+      if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
+        reject(new Error('Connection not open'));
+        return;
+      }
+      const msg = Protocol.createRequest(method, params);
+      this.pendingRequests.set(msg.id, (response) => {
+        if (response.error) reject(new Error(response.error.message));
+        else resolve(response.result);
+      });
+      this.ws.send(Protocol.serialize(msg));
+    });
+  }
+
+  sendNotification(method: string, params: any): void {
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) return;
+    const msg = Protocol.createNotification(method, params);
+    this.ws.send(Protocol.serialize(msg));
+  }
+
+  onMessage(handler: (msg: Message) => void): void {
+    this.messageHandler = handler;
+  }
+
+  private startHeartbeat(): void {
+    this.heartbeatInterval = setInterval(() => {
+      this.sendNotification('heartbeat', { timestamp: Date.now() });
+    }, 30000);
+  }
+
+  private stopHeartbeat(): void {
+    if (this.heartbeatInterval) {
+      clearInterval(this.heartbeatInterval);
+      this.heartbeatInterval = null;
+    }
+  }
+
+  private reconnect(): void {
+    if (this.reconnectAttempts >= this.maxReconnectAttempts) return;
+    this.reconnectAttempts++;
+    setTimeout(() => {
+      this.connect().catch(() => this.reconnect());
+    }, this.reconnectDelay * Math.pow(1.5, this.reconnectAttempts - 1));
+  }
+
+  disconnect(): void {
+    this.stopHeartbeat();
+    this.pendingRequests.clear();
+    if (this.ws) {
+      this.ws.close();
+      this.ws = null;
+    }
+  }
+
+  isConnected(): boolean {
+    return this.ws?.readyState === WebSocket.OPEN;
+  }
+}.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\client\protocol.ts === 
+// src/client/protocol.ts
+export interface Message {
+  id: string;
+  type: 'request' | 'response' | 'notification';
+  method?: string;
+  params?: any;
+  result?: any;
+  error?: { code: number; message: string };
+}
+
+export class Protocol {
+  static serialize(msg: Message): string {
+    return JSON.stringify(msg);
+  }
+
+  static deserialize(data: string): Message {
+    return JSON.parse(data);
+  }
+
+  static createRequest(method: string, params: any): Message {
+    return { id: crypto.randomUUID(), type: 'request', method, params };
+  }
+
+  static createResponse(id: string, result: any): Message {
+    return { id, type: 'response', result };
+  }
+
+  static createError(id: string, code: number, message: string): Message {
+    return { id, type: 'response', error: { code, message } };
+  }
+
+  static createNotification(method: string, params: any): Message {
+    return { id: crypto.randomUUID(), type: 'notification', method, params };
+  }
+}.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\commands\handlers.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\commands\registerCommands.ts === 
+import * as vscode from 'vscode';
+import { AICoworkClient } from '../client/aiCoworkClient';
+import { logger } from '../utils/logger';
+import { ChatViewProvider } from '../chat/chatViewProvider';
+
+export function registerCommands(
+    context: vscode.ExtensionContext,
+    client: AICoworkClient
+): vscode.Disposable {
+    // Register the chat view provider
+    const chatProvider = new ChatViewProvider(context.extensionUri, client);
+    const chatView = vscode.window.registerWebviewViewProvider(
+        'ai-cowork.chatView',
+        chatProvider,
+        {
+            webviewOptions: {
+                retainContextWhenHidden: true
+            }
+        }
+    );
+
+    // Register all commands
+    const commands = [
+        // Open chat panel
+        vscode.commands.registerCommand('ai-cowork.openChat', async () => {
+            try {
+                await vscode.commands.executeCommand('workbench.view.extension.ai-cowork');
+                logger.info('Chat panel opened');
+            } catch (error) {
+                logger.error('Failed to open chat panel', error);
+                vscode.window.showErrorMessage('Failed to open AI Cowork chat');
+            }
+        }),
+
+        // Accept completion command
+        vscode.commands.registerCommand('ai-cowork.acceptCompletion', async (args?: any) => {
+            // This is triggered when a user accepts an inline completion
+            // The actual completion is handled by VS Code's built-in mechanism
+            // We just log it for telemetry
+            if (args?.confidence) {
+                logger.info('Completion accepted', { confidence: args.confidence, duration: args.duration });
+            } else {
+                logger.info('Completion accepted');
+            }
+            
+            // You could send a feedback event to the backend here
+            if (client && client.isConnected()) {
+                try {
+                    await client.sendFeedback({
+                        type: 'completion_accepted',
+                        timestamp: Date.now(),
+                        data: args || {}
+                    });
+                } catch (error) {
+                    logger.error('Failed to send feedback', error);
+                }
+            }
+        }),
+
+        // Trigger explicit completion (Ctrl+Space / Cmd+Space style)
+        vscode.commands.registerCommand('ai-cowork.triggerCompletion', async () => {
+            const editor = vscode.window.activeTextEditor;
+            if (!editor) {
+                vscode.window.showWarningMessage('No active editor');
+                return;
+            }
+
+            // VS Code will automatically trigger the completion provider
+            // This command just makes it explicit
+            await vscode.commands.executeCommand('editor.action.inlineSuggest.trigger');
+            logger.info('Manual completion triggered');
+        }),
+
+        // Clear ghost text
+        vscode.commands.registerCommand('ai-cowork.clearGhostText', () => {
+            // This clears any active ghost text
+            vscode.commands.executeCommand('editor.action.inlineSuggest.hide');
+            logger.info('Ghost text cleared');
+        }),
+
+        // Run AI build command
+        vscode.commands.registerCommand('ai-cowork.build', async () => {
+            try {
+                const workspaceFolder = vscode.workspace.workspaceFolders?.[0];
+                if (!workspaceFolder) {
+                    vscode.window.showErrorMessage('No workspace folder found');
+                    return;
+                }
+
+                const buildCommand = vscode.workspace.getConfiguration('ai-cowork').get('buildCommand', 'npm run build');
+                
+                vscode.window.withProgress({
+                    location: vscode.ProgressLocation.Notification,
+                    title: 'AI-Cowork: Building project...',
+                    cancellable: false
+                }, async (progress) => {
+                    progress.report({ increment: 0, message: 'Running build...' });
+                    
+                    // Build via the backend
+                    const result = await client.requestBuild({
+                        workspacePath: workspaceFolder.uri.fsPath,
+                        buildCommand: buildCommand
+                    });
+                    
+                    if (result.success) {
+                        vscode.window.showInformationMessage('âœ… Build completed successfully!');
+                        logger.info('Build completed', { output: result.output });
+                    } else {
+                        vscode.window.showErrorMessage(`âŒ Build failed: ${result.error}`);
+                        logger.error('Build failed', { error: result.error, output: result.output });
+                    }
+                    
+                    progress.report({ increment: 100 });
+                });
+            } catch (error) {
+                logger.error('Build command failed', error);
+                vscode.window.showErrorMessage(`Build failed: ${error}`);
+            }
+        }),
+
+        // Show extension settings
+        vscode.commands.registerCommand('ai-cowork.showSettings', () => {
+            vscode.commands.executeCommand('workbench.action.openSettings', 'ai-cowork');
+        }),
+
+        // Show connection status
+        vscode.commands.registerCommand('ai-cowork.showStatus', async () => {
+            const isConnected = client && client.isConnected();
+            const status = isConnected ? 'ğŸŸ¢ Connected' : 'ğŸ”´ Disconnected';
+            const serverUrl = vscode.workspace.getConfiguration('ai-cowork').get('serverUrl', 'http://localhost:3000');
+            
+            vscode.window.showInformationMessage(
+                `AI-Cowork Status: ${status}\nServer: ${serverUrl}`,
+                'Reconnect',
+                'Settings'
+            ).then(selection => {
+                if (selection === 'Reconnect') {
+                    vscode.commands.executeCommand('ai-cowork.reconnect');
+                } else if (selection === 'Settings') {
+                    vscode.commands.executeCommand('ai-cowork.showSettings');
+                }
+            });
+        }),
+
+        // Reconnect to backend
+        vscode.commands.registerCommand('ai-cowork.reconnect', async () => {
+            if (client) {
+                try {
+                    await client.disconnect();
+                    await client.connect();
+                    vscode.window.showInformationMessage('âœ… Reconnected to AI Cowork server');
+                    logger.info('Reconnected to server');
+                } catch (error) {
+                    logger.error('Reconnection failed', error);
+                    vscode.window.showErrorMessage(`Reconnection failed: ${error}`);
+                }
+            }
+        }),
+
+        // Quick fix suggestion
+        vscode.commands.registerCommand('ai-cowork.suggestFix', async () => {
+            const editor = vscode.window.activeTextEditor;
+            if (!editor) {
+                vscode.window.showWarningMessage('No active editor');
+                return;
+            }
+
+            const selection = editor.selection;
+            const text = editor.document.getText(selection);
+            
+            if (!text) {
+                vscode.window.showWarningMessage('Please select some code to suggest a fix');
+                return;
+            }
+
+            try {
+                const fixResponse = await client.requestFix({
+                    filePath: editor.document.fileName,
+                    language: editor.document.languageId,
+                    selectedText: text,
+                    context: editor.document.getText()
+                });
+
+                if (fixResponse && fixResponse.suggestion) {
+                    const edit = new vscode.WorkspaceEdit();
+                    edit.replace(editor.document.uri, selection, fixResponse.suggestion);
+                    await vscode.workspace.applyEdit(edit);
+                    
+                    vscode.window.showInformationMessage('ğŸ’¡ AI fix applied!');
+                    logger.info('AI fix applied', { file: editor.document.fileName });
+                }
+            } catch (error) {
+                logger.error('Fix suggestion failed', error);
+                vscode.window.showErrorMessage(`Failed to get fix suggestion: ${error}`);
+            }
+        })
+    ];
+
+    return vscode.Disposable.from(
+        chatView,
+        ...commands
+    );
+}.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\completion\completionProvider.ts === 
+import * as vscode from 'vscode';
+import { AICoworkClient } from '../client/aiCoworkClient';
+import { ContextProvider } from './context_provider';
+import { GhostTextRenderer } from './ghost_text';
+import { logger } from '../utils/logger';
+
+export class CompletionProvider implements vscode.InlineCompletionItemProvider {
+    private client: AICoworkClient;
+    private contextProvider: ContextProvider;
+    private ghostRenderer: GhostTextRenderer;
+    private debounceTimer: NodeJS.Timeout | undefined;
+    private readonly DEBOUNCE_DELAY = 300; // ms
+
+    constructor(client: AICoworkClient) {
+        this.client = client;
+        this.contextProvider = new ContextProvider();
+        this.ghostRenderer = new GhostTextRenderer();
+    }
+
+    async provideInlineCompletionItems(
+        document: vscode.TextDocument,
+        position: vscode.Position,
+        context: vscode.InlineCompletionContext,
+        token: vscode.CancellationToken
+    ): Promise<vscode.InlineCompletionItem[] | undefined> {
+        // Skip if not in a supported language
+        if (!this.isSupportedLanguage(document.languageId)) {
+            return undefined;
+        }
+
+        // Check if the user is actively typing (avoid completions during rapid typing)
+        if (context.triggerKind === vscode.InlineCompletionTriggerKind.Automatic) {
+            // Debounce automatic triggers
+            return this.debounceCompletion(document, position, context, token);
+        }
+
+        // For explicit triggers (like keyboard shortcut), process immediately
+        return this.generateCompletion(document, position, token);
+    }
+
+    private async debounceCompletion(
+        document: vscode.TextDocument,
+        position: vscode.Position,
+        context: vscode.InlineCompletionContext,
+        token: vscode.CancellationToken
+    ): Promise<vscode.InlineCompletionItem[] | undefined> {
+        return new Promise((resolve) => {
+            // Clear any existing debounce timer
+            if (this.debounceTimer) {
+                clearTimeout(this.debounceTimer);
+            }
+
+            // Set a new debounce timer
+            this.debounceTimer = setTimeout(async () => {
+                const result = await this.generateCompletion(document, position, token);
+                resolve(result);
+            }, this.DEBOUNCE_DELAY);
+        });
+    }
+
+    private async generateCompletion(
+        document: vscode.TextDocument,
+        position: vscode.Position,
+        token: vscode.CancellationToken
+    ): Promise<vscode.InlineCompletionItem[] | undefined> {
+        try {
+            // Collect context from the current file
+            const contextData = await this.contextProvider.collectContext(document, position);
+            
+            if (!contextData) {
+                return undefined;
+            }
+
+            logger.debug('Requesting completion with context', { 
+                file: document.fileName, 
+                position: position.line,
+                contextLength: contextData.context.length
+            });
+
+            // Send request to backend server
+            const completionResponse = await this.client.requestCompletion({
+                filePath: document.fileName,
+                language: document.languageId,
+                context: contextData.context,
+                cursorPosition: {
+                    line: position.line,
+                    character: position.character
+                },
+                symbols: contextData.symbols,
+                imports: contextData.imports
+            }, token);
+
+            if (!completionResponse || !completionResponse.completion) {
+                return undefined;
+            }
+
+            // Generate ghost text
+            const ghostText = this.ghostRenderer.generateGhostText(
+                completionResponse.completion,
+                document,
+                position
+            );
+
+            if (!ghostText) {
+                return undefined;
+            }
+
+            // Create the inline completion item
+            const completionItem = new vscode.InlineCompletionItem(
+                ghostText,
+                new vscode.Range(position, position),
+                {
+                    title: 'Accept AI Completion',
+                    command: 'ai-cowork.acceptCompletion'
+                }
+            );
+
+            // Add tooltip with confidence information
+            if (completionResponse.confidence) {
+                completionItem.command = {
+                    title: 'Accept AI Completion',
+                    command: 'ai-cowork.acceptCompletion',
+                    arguments: [{
+                        confidence: completionResponse.confidence,
+                        duration: completionResponse.duration
+                    }]
+                };
+            }
+
+            return [completionItem];
+
+        } catch (error) {
+            logger.error('Error generating completion', error);
+            return undefined;
+        }
+    }
+
+    private isSupportedLanguage(languageId: string): boolean {
+        const supportedLanguages = [
+            'javascript', 'typescript', 'javascriptreact', 'typescriptreact',
+            'python', 'java', 'cpp', 'c', 'go', 'rust', 'php', 'ruby',
+            'swift', 'kotlin', 'csharp', 'html', 'css', 'scss', 'less'
+        ];
+        return supportedLanguages.includes(languageId);
+    }
+}.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\completion\context_provider.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\completion\ghost_text.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\config\settings.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\utils\file_utils.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\src\utils\logger.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\test\completion.test.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\editor-clients\vscode-extension\test\extension.test.ts === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\benchmarks\aicowork_benchmark.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\benchmarks\comparison.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\benchmarks\copilot_benchmark.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\benchmarks\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\dataset.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\evaluator.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\metrics.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\scorecard.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\reporters\html_reporter.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\evaluation\ragas\reporters\json_reporter.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\docker\.env === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\docker\docker-compose.yml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\docker\Dockerfile.nginx === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\docker\Dockerfile.qdrant === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\docker\Dockerfile.server === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\kubernetes\configmap.yaml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\kubernetes\deployment.yaml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\kubernetes\ingress.yaml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\kubernetes\service.yaml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\monitoring\prometheus\prometheus.yml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\qdrant\config\qdrant_config.yaml === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\infrastructure\qdrant\init\setup.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\build_extensions.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\download_models.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\package_extension.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\run_tests.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\seed_memory.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\setup.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\dev\start_server.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\dev\watch_intellij.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\scripts\dev\watch_vscode.sh === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\main.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\middleware\auth.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\middleware\cors.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\middleware\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\approval.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\chat.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\completion.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\evaluation.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\health.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\memory.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\routes\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\websocket\handlers.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\websocket\manager.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\api\websocket\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\core\config.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\core\container.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\core\exceptions.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\core\logging.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\core\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\base_crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\deployment_crew\agents.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\deployment_crew\crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\deployment_crew\tasks.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\deployment_crew\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\design_crew\agents.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\design_crew\crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\design_crew\tasks.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\design_crew\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\documentation_crew\agents.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\documentation_crew\crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\documentation_crew\tasks.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\documentation_crew\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\implementation_crew\agents.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\implementation_crew\completion.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\implementation_crew\crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\implementation_crew\tasks.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\implementation_crew\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\requirement_crew\agents.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\requirement_crew\crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\requirement_crew\tasks.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\requirement_crew\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\testing_crew\agents.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\testing_crew\crew.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\testing_crew\tasks.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\crews\testing_crew\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\evaluation\metrics.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\evaluation\scorecard.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\evaluation\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\llm\model_manager.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\llm\qwen_client.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\llm\tokenizer.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\llm\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\decision_memory.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\embeddings.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\ingest.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\retriever.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\schemas.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\vector_store.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\memory\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\file_watcher.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\git_ops.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\linter.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\memory_search.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\repo_reader.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\repo_writer.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\symbol_search.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\test_runner.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\foundation\tools\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\approval.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\graph.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\phase_registry.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\router.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\state.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\supervisor.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\orchestrator\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\__init__.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\integration\test_api.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\integration\test_evaluation.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\integration\test_memory.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\unit\test_crews.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\unit\test_foundation.py === 
+.
+=== D:\Ramit\mislencious\projects\ai-cowork\server\tests\unit\test_orchestrator.py === 
+.
